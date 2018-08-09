@@ -1,0 +1,24 @@
+Sesiones
+
+
+
+Manetener información en diferentes sesiones del programas
+
+session_start() crea una sesión o reanuda la actual basada en un identificador de sesión pasado mediante una petición GET o POST,
+o pasado mediante una cookie.
+
+$_session s un array asociativo que contiene variables de sesión disponibles para el script actual. 
+
+
+session_destroy() destruye toda la información asociada con la sesión actual. No destruye ninguna de las variables globales asociadas con la sesión, 
+ni destruye la cookie de sesión. Para volver a utilizar las variables de sesión se debe llamar a session_start().
+
+Crar dos paginas con dos contadores y mostrar en cada pagina el contador que corresponda. al finalizar la sesion mostrara el numero de veces que has visitado 
+cada pagina.
+
+Programa que nos permita introducir varias palabras y añadirlas a una lista, segunda pagian ver lista de palabras, enlace a introducir palabra y enlace finalizar 
+sesion, terdera pagina vaciara la lista y nos redirigirar directamente a la pagina introducir palabras. mirar comanndo header()
+
+
+
+

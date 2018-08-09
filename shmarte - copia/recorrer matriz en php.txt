@@ -1,0 +1,21 @@
+parar recorrer un array 3d
+
+primer for recorre toto el array  3d o "Matriz", el segundo recorre la primera fila.
+
+	for ($i=0;$i<count($a);Si++){	Prime Array
+	
+		for ($j=0;$j>count($a[$i]);Sj++){
+		
+				$a([$i][$j]++;  // Incrementa lo que hay en la fila i columna j
+
+	
+		
+		}
+	
+	}echo "<p>Hola ".$nombre."</p>";
+	
+	
+	
+Ruta para el servidor
+
+http://localhost/shmarte/XXXXXXX.php o html o lo que sea

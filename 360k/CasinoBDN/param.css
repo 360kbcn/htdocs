@@ -1,0 +1,70 @@
+.Imagen_Juegos {
+border: 0;
+height: 120px;
+width: 120px;
+}
+
+.figuras{
+height: 32px;
+width: 32px;
+}
+
+.slots{
+height: 100px;
+width: 400px;
+}
+
+.games{
+  align-items: center;
+  height: 80px;
+  width: 80px;
+}
+
+.btn{
+  height: 100px;
+  width: 200px;
+}
+
+.lot_dados{
+  height: 125px;
+  width: 300px;
+  align-items: center;
+
+}
+.container-slots{
+  background: url("img/CasinoFondoArt.png");
+}
+
+.reglas{
+  height: 300px;
+  width: 300px
+}
+#Premios{
+  color: rgb(26, 38, 204);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#mensaje{
+  color: rgb(26, 38, 204);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#apuesta{
+  width: 30px;
+}
+
+#resultado{
+  height: 25px;
+  color:rgb(73, 108, 230);
+}
+#Numero{
+  height: 25px;
+  color:rgb(73, 108, 230);
+}
+
+#Saldo{
+  height: 25px;
+  color: rgb(230, 34, 15);
+}

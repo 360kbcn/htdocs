@@ -1,0 +1,12 @@
+Hola Equipo 
+
+He creado la parte de Login.
+Aprochechando lo que ya habia hecho le he añadido el poder crear el usuario. 
+La practica dice que no hace falta controlar el alta baja o modificacion de usuarios, que se puede hacer
+desde el phpmyadmin. Pero bueno como practica o libreria se puede implementar o con comentarlo quitarlo.
+Es interesante por que he usado headers para los redireccionamientos y para que no me dieran problemas he 
+utilizado el ob_start() y el ob_end_flush(), que me han parecido dos instrucciones muy interesantes.
+
+Sludos.
+
+Pedro 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+      <input id="Usuario" type="text" placeholder="Usuario">
+      <button id="btn1">Login</button>
+      <p id="Mensaje">Inicia Sesion</p>
+   <script type="text/javascript">
+        document.getElementById("btn1").onclick = 
+            function(){
+            var entrada ="";
+            entrada = document.getElementById("Usuario").value;
+            document.getElementById("Mensaje").innerHTML = "Bienvenido "+entrada;
+        }
+       
+       
+</script>
+    
+</body>
+</html>

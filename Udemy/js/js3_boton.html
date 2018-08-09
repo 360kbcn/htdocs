@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio2</title>
+  </head>
+  <body>
+    <p id="texto">Hola Mundo</p>
+    <button id=btn1 type="submit">Pulsa</button>
+    <script type="text/javascript"> // Comentarios como en java y en php
+      document.getElementById('btn1').onclick = function(){
+        // Esta funcion modifical el texto del primer parrado
+        document.getElementById('texto').innerHTML = 'Cojonudo Pedro :';
+      }
+    </script>
+  </body>
+</html>

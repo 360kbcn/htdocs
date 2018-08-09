@@ -1,0 +1,11 @@
+/* Mis aportaciones en CSS */
+
+body {
+  background-color: transparent;
+  background-image: url(../img/Fondo.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+
+}

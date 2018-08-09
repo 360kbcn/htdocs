@@ -1,0 +1,17 @@
+#img{
+	background:url(profile-pic.jpg) no-repeat;
+	height: 400px;
+	width: 550px;
+}
+
+#img:hover{
+	transform:scale(1);
+	transition: transform .3s;
+	height: 400px;
+	width: 400px;
+	margin: center;
+	background:url(cara.png) no-repeat;
+	overflow:hidden;
+
+
+}

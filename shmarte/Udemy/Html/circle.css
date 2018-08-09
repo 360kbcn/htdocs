@@ -1,0 +1,25 @@
+h1{
+  position: absolute;
+  font-size: 140%;
+  color: black;
+}
+#circulo{
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  left:30px;
+  top:150px;
+  border-radius: 50%;
+  background-color: lightskyblue;
+
+}
+
+#cuadrado{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top:25px;
+  left: 40px;
+  border: 1px;
+  background-color: orangered;
+}

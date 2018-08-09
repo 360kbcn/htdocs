@@ -1,0 +1,7 @@
+Azul Plata 		==> DarkCyan 		#008b8b
+Plata      		==> Silver 		#a9a9a9
+Azul Plata Oscuro 	==> DarkSlateGray 	#2f4f4f
+Rojo Brillante		==> DarkRed	        #8b0000
+Rosa Brillante		==> DarkSalmon 		#e9967a
+Azul Fuerte		==> MidnighBlue		#191970
+

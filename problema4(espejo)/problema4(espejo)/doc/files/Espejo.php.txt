@@ -1,0 +1,9 @@
+<?php
+		// Son todos negativos?
+		function fEspejo($a){
+
+				// INCORPORAR CUERPO FUNCIÓN ESPEJO.
+
+	    }
+?>
+

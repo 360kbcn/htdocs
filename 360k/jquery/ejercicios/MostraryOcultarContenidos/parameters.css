@@ -1,0 +1,11 @@
+div {
+  margin:10px;
+}
+div.infoExtra {
+  display:none;
+}
+.leerMas { color:blue; cursor:pointer; display:inline;}
+.leerMas:hover {color:purple; text-decoration:underline;}
+
+/*hover crear stylo de cascada
+*/

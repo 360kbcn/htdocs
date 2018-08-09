@@ -1,0 +1,13 @@
+/.buildpath
+/.project
+/.settings
+/.svn
+/.transifexrc
+/node_modules/
+/composer.lock
+/yarn.lock
+/vendor/
+*.js.map
+*.css.map
+/skins/frontend/*/assets/css/less-vars*
+/skins/frontend/*/src/less/less-vars.css

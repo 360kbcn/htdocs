@@ -1,0 +1,75 @@
+header{
+  /*background-color: #173e43;*/
+  height: 200px;
+  padding: 20px;
+}
+
+header h1{
+  background-color:antiquewhite;
+  height: 100px;
+  font-size: 75px;
+  text-align: center;
+  font color: teal;
+}
+
+section{
+  background-color: azure;
+  height: 625px;
+  width: 150px;
+  float: left;
+  font-size: 30px;
+  text-align: center;
+  font color: Teal;
+}
+
+lo{
+  font-size: 25px;
+  color:Black;
+}
+
+aside p
+{
+  font-family: Verdana;
+  font-size: 30px;
+  text-decoration: none;
+  color:gray;
+}
+
+aside a:hover{
+  color: brown;
+  /*text-shadow: 3px 3px;*/
+}
+
+aside a:visited{
+  color: darkorange;
+}
+
+aside a:active{
+  color: darkgrey;
+}
+
+
+
+article{
+  background-color: darkcyan;
+  height: 600px;
+  width: auto;
+  text-align: center;
+}
+
+article h3{
+  font-size: 25px;
+  color: yellow;
+}
+
+article p{
+  font color:white;
+  font-size: 20px;
+}
+
+footer{
+  background-color: cadetblue;
+  height: 30px;
+  text-align: center;
+  font-size: 25px;
+}

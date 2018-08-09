@@ -1,0 +1,19 @@
+.fondo{
+  background-color: yellow;
+  transition-property: text-decoration;
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+  background-color orange;
+  transition-property: text-decoration;
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+  transition-property: text-decoration;
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+  background-color: black;
+}
+
+h1 {color: #00ff00}

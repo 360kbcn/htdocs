@@ -1,0 +1,55 @@
+h1{
+  background-color: rgb(60,60,60);
+  color: white;
+  padding: 1em;
+}
+
+table{
+  border-collapse: collapse;
+  width: 400px;
+}
+
+th,td{
+  border-bottom: 1px solid gray;
+}
+
+th{
+  font-variant: small-caps;
+  background-color: rgb(100,100,100);
+  color: white;
+  padding: 10px;
+}
+
+tr:nth-child(2n){
+  background-color: rgb(200,200,200);
+}
+
+nav{
+  width: 200px;
+  float: left;
+}
+
+main{
+  margin-left: 220px;
+}
+
+.actual, nav a:hover.actual{
+  background-color: CornflowerBlue;
+  color: aliceblue;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  font-size: 1.3em;
+  color:black;
+}
+
+nav a:hover{
+  background-color: AliceBlue;
+  color: black;
+}

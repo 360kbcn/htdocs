@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Variables en js</title>
+</head>
+<body>
+  <input id="login" type="text" placeholder="texto">
+  <button id="btn_1">Login</button>
+  <p id="texto">Inicia Sesion</p>
+  <script type="text/javascript">
+    document.getElementById('btn_1').onclick = function (){
+      var entradaTexto = "";
+      entradaTexto = document.getElementById("login").value;
+      document.getElementById('texto').innerHTML = "Bienvenido " + entradaTexto;
+    }
+  </script>
+
+</body>
+</html>

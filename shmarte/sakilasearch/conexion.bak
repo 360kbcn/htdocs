@@ -1,0 +1,24 @@
+<?php
+require 'vendor/autoload.php';
+// require 'bdsakila.php'; // requerimos las clase definida bdsakila donde iran las consultas
+$Myapp = new Slim\App();
+
+$variable1 = $Myapp->getContainer();
+$variable1['bd'] = function(){
+  $Mypdo = new PDO("mysql:host=localhost;dbname=sakila","root");
+  return $Mypdo;
+};
+
+$variable1['view']=function(){
+  return new \Slim\Views\PhpRenderer('view');
+};
+
+
+
+
+
+
+
+
+
+ ?>

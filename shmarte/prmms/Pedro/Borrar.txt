@@ -1,0 +1,17 @@
+Hola Equipo 
+
+He creado una serie de Funciones y paginas para Borrar
+
+
+La funciones son las siguientes.
+
+Dentro del Fichero mms_clase.php
+
+Tenemos la funcion listado que hace un recorrido por la tabla y crea el array con los datos que se mostraran en la pantalla /view/borrar.html
+Una vez implimentada la opcion de pagina borrar y mostrando el listado de las peliculas, se podra seleccionar con el raton la papelera y al pulsar sobre ella,
+se ejecutarta en el fichero mms_clase.php la funcion borrar
+
+Sludos.
+
+Pedro 
+

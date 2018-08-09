@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: rgb(95, 194, 221);
+  margin: 2%;
+}
+#mivideo{
+  position: absolute;;
+  top: 0;
+  width: 50%;
+  z-index:-1;
+}

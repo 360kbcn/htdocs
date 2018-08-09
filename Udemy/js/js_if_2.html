@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ja if 2</title>
+</head>
+<body>
+  <h1>Introduce la palabra clave</h1>
+  <input id="Usuario" type="text" placeholder="texto">
+  <button id="btn_1">Pulsa</button>
+  <p id="resultado"></p>
+  <script type="text/javascript">
+    document.getElementById('btn_1').onclick = function(){
+      var entradaTexto = "";
+      entradaTexto = document.getElementById("Usuario").value;
+
+      if (entradaTexto == "shmarte"){
+        document.getElementById('resultado').innerHTML = "Acertastes";
+      }else{
+        document.getElementById('resultado').innerHTML = " No es la palabra Correcta";
+        }
+      }
+  </script>
+</body>
+</html>

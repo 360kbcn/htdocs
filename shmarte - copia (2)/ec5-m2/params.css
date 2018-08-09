@@ -1,0 +1,128 @@
+*{
+
+}
+
+
+
+#Alerta{
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color: #F1CF6A;
+  color:#FF5733;
+  text-align: center;
+  padding: 8px 8px 8px 8px;
+  font-size:150%;
+  display: inline-block;
+}
+
+#Bien{
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color:#AF84E9;
+  color:#3EFF33;
+  text-align: center;
+  padding: 8px 8px 8px 8px;
+  font-size: 150%;
+  display: inline-block;
+}
+
+#Titulo  {
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color:rgba(137,147,190,0.5);
+  color:#232531;
+  text-align: center;
+  padding: 28px 28px 28px 28px;
+  font-size: 150%;
+  display: inline-block;
+}
+
+#Btn{
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color:rgba(255,255,255,0.3);
+  color: black;
+  text-align: center;
+  padding: 8px 8px 8px 8px;
+  font-size: 150%;
+  display: inline-block;
+
+}
+
+#h2{
+  color:rgb(23,30,144);
+  font-size: 200%;
+}
+
+#letra{
+  color: blue;
+  font-size: 150%;
+}
+
+#fuente{
+  font-size: 48;
+}
+
+
+
+body{
+  text-align: center;
+
+}
+
+iv{
+  border: 0px;
+  height: 90px;
+  margin: 30px, 30px, 30px, 30px;
+  text-align: right;
+  position: absolute;
+  botton:0px; right: 0px;
+}
+
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#td1{
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+
+#pie{
+  height: 20;
+  column-span: 2;
+}
+th,td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+main {
+  float: left;
+  width: 100%;
+}
+
+.derecha{
+  float: right;
+}
+.left{
+  float: left;
+}
+
+
+#flotante{
+  z-index:10001;
+  padding: 18px;
+  border: 2px solid blue;
+  top: 1,75px;
+  left: 339.5px;
+  position: absolute;
+  width: 300px;
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+}

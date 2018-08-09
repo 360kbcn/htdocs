@@ -1,0 +1,23 @@
+<?php
+// Son todos negativos?
+function medio($InSearch,$toFind){
+
+		//Longitud de la cadena.
+		$total = strlen($InSearch);
+		//Mira si hay coincidencias.
+		$pos = strpos($InSearch,$toFind);
+		//Eso quiere decir q la ha hallado,aunque sea en la 1 pos,la 0.
+		if($pos!==false){ // Si entra es q hay coincidencias.
+				//Pregunto q si la cadena sólo tiene '<->' que devuelva 0=hallada.
+				if($pos==0 and strlen($toFind)==strlen($toFind))
+						return 0;//Cadena en 1 posición,unicamente.
+				else {
+					return $pos;
+				}
+		 // Si no se halla cadena...
+		 }else if($pos===false) // if($pos!==false)
+		 		return -1;
+		
+	}//end-func-maximo.
+?>
+

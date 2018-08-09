@@ -1,0 +1,37 @@
+
+body{
+  font-family: monospace;
+  background-color: black;
+
+}
+
+
+.contenedor {
+  margin:auto;
+  display:block;
+}
+
+
+p {
+  float: left;
+  color: #21eb1f;
+  position: relative;
+  font-size: 150%
+}
+
+
+p span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: black;
+  border-left: 10px solid #21eb1f;
+  animation: maquina 3s steps(40), parada;
+
+}
+
+@keyframes maquina {
+    from {
+      width: 100%;
+    }
+}

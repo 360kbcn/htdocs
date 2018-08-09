@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dedos</title>
+</head>
+<body>
+      <h1>¿Cuantos dedos tengo?</h1>
+      <input type="text" id="texto" placeholder="Pon un numero">
+      <button id="btn1">Comprueba</button>
+   <script type="text/javascript">      
+       var contador = 0;
+       document.getElementById("btn1").onclick = function(){
+       var aleatorio1 = Math.random()*5;
+       aleatorio1 = Math.floor(aleatorio1);
+       var introducido = document.getElementById("texto").value;        
+        if( introducido == aleatorio1){
+            if(contador>3){
+            alert("Te has pasado de Intentos el numero era "+aleatorio1);    
+            }
+            
+            alert("Has Acertado el Numero en "+contador+" intentos");
+            
+        }else{
+            if(contador>3){
+            alert("Te has pasado de Intentos el numero era "+aleatorio1);    
+            }
+            contador ++;
+            alert("Sigue intentandolo, llevas "+contador+" intentos" );
+            
+        }
+           
+       }
+    </script>
+    
+</body>

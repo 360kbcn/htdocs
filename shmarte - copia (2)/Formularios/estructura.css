@@ -1,0 +1,62 @@
+*{
+  color: gray;
+}
+
+h1 {
+  color: white;
+  background-color: rgb(60,60,60);
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid gray;
+  border-left: 20px solid gray;
+  padding-left: 10px;
+}
+
+section{
+  border: 1px dashed gray;
+  background-color: beige;
+  padding: 2em;
+  margin: 1em;
+}
+
+section a {
+  color:red;
+}
+
+nav{
+  float: left;
+  width: 20%;
+}
+
+
+main{
+  float: left;
+  width: 80%;
+}
+
+footer{
+  background-color: orange;
+  clear:both;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+nav a:hover{
+  background-color: blue;
+  color: orange;
+}

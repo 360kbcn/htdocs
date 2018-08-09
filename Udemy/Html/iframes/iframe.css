@@ -1,0 +1,16 @@
+h1{
+  margin: 2%;
+  position: relative;
+  bottom: 100px;
+  color:darkslategrey;
+}
+
+table{
+  margin: 5%;
+  border: 1;
+}
+
+#tamano{
+  width: 300;
+  height: 300;
+}

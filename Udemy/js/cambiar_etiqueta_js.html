@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio1</title>
+</head>
+
+<body>
+  <p id="texto">Hola Mundo</p>
+  <button id="btn_1">Pulsa Aqui</button>
+  <p id="texto2">Javascript es.....</p>
+  <button id="btn_2">Cambia el Texto</button>
+  <p id="parrafo_Vacio"></p>
+  <button id="btn_3">Crea el Parrafo</button>
+  <p id="parrafo_con_Estilo">Texto con estilo</p>
+  <button id="btn_4">Modifica el estilo</button>
+  <p></p>
+  <button id="btn_5">Desaparece Texto con Estilo</button>
+  <script type="text/javascript">
+    document.getElementById('btn_1').onclick = function () {
+      // Esta funcion modifica el texto de la etiqueta
+      document.getElementById('texto').innerHTML ="Hola Pedro Chorizo Picante";
+    }
+    document.getElementById('btn_2').onclick = function() {
+      document.getElementById('texto2').innerHTML = document.getElementById('texto2').innerHTML + " ¡¡¡¡¡INCREIBLE!!!!!";
+    }
+    document.getElementById('btn_3').onclick = function() {
+      document.getElementById('parrafo_Vacio').innerHTML = "<h1> En un lugar de la Mancha...</h1>";
+    }
+    document.getElementById('btn_4').onclick = function() {
+      document.getElementById('parrafo_con_Estilo').style.display = 'block';
+      document.getElementById('parrafo_con_Estilo').style.fontSize = '35px';
+      document.getElementById('parrafo_con_Estilo').style.color = 'blue';
+      document.getElementById('parrafo_con_Estilo').style.backgroundColor = 'yellow';
+    }
+
+    document.getElementById('btn_5').onclick = function(){
+      document.getElementById('parrafo_con_Estilo').style.display = "none";
+    }
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+RewriteEngine On
+RewriteBase /shmarte/07082017/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+
+	<style>
+	#slot {
+		background:url("slot.png") repeat-y;
+		border:1px solid;
+		height:65px;
+		width:65px;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div id="slot"></div>
+
+	<button onclick="iniciar()" id="iniciar">Iniciar</button>
+	<button onclick="parar()" id="parar" disabled>Parar</button>
+
+	<script>
+	// variable que contiene la posicion de la imagen
+	var contador=0;
+
+	// variable que contiene la velocidad de movimiento
+	var velocidad=0;
+
+	// variable que incremente y decrementa la velocidad de la imagen
+	var incremento=0;
+
+	// variables que controlar los intervalor de tiempo
+	var interval1,interval2;
+
+	function iniciar() {
+		document.getElementById("iniciar").disabled=true;
+
+		// inicializalos los valores
+		incremento=velocidad=1;
+
+		// intervalo de tiempo en el que se ejecuta el movimiento
+		interval1=setInterval(function() {
+
+			// vamos modificando la posicion de la imagen de fondo para realizar el movimiento
+			document.getElementById("slot").style["background-position"]="0% "+contador+"px";
+
+			// si incremento es negativo, quiere decir que estamos parando la imagen
+			if(velocidad<100 || incremento<0) {
+				// incrementamos la velocidad de movimiento
+				velocidad=velocidad+incremento;
+			}
+			if(velocidad>50) {
+				document.getElementById("parar").disabled=false;
+			}
+
+			// Si la velocidad es inferior o igual a 0, paramos y nos posicionamos
+			// en el punto exacto de la siguiente imagen
+			if(velocidad<=3 && incremento<0) {
+				document.getElementById("parar").disabled=true;
+				clearInterval(interval1);
+				finalizarMovimiento();
+			}
+			contador+=velocidad;
+		}, 50);
+	}
+
+	function parar() {
+		incremento=-3;
+	}
+
+	// Función para finalizar el movimiento en un elemento centrado
+	function finalizarMovimiento() {
+		// obtenemos la posicion exacta de la imagen
+		pos = document.getElementById("slot").style.backgroundPosition;
+		pos = parseInt(pos.split(" ")[1]);
+
+		// obtenemos la posicion final donde parar para que quede la imagen
+		// bien encuadrada
+		var relativePos = pos%75;
+		var posicionFinal = pos-relativePos+75;
+
+		// intervalo de tiempo hasta que se centra la imagen en el recuadro
+		interval2=setInterval(function() {
+			contador+=velocidad;
+			document.getElementById("slot").style["background-position"]="0% "+contador+"px";
+			if(contador>=posicionFinal)
+			{
+				clearInterval(interval2);
+				document.getElementById("slot").style["background-position"]="0% "+(posicionFinal)+"px";
+				document.getElementById("iniciar").disabled=false;
+			}
+		}, 1);
+	}
+	</script>
+</body>
+</html>

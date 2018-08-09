@@ -1,0 +1,45 @@
+
+body{
+  font-family: monospace;
+  background-color: black;
+
+}
+
+
+.contenedor {
+  margin:auto;
+  display:block;
+}
+
+
+p {
+  margin: 0 0 -10px;
+  float: left;
+  color: #21eb1f;
+  position: relative;
+  font-size: 150%
+}
+
+#Alerta{
+  margin: 0 0 -10px;
+  float left;
+  color: #FE0000;
+  position: relative;
+  font-size: 200%
+}
+
+
+p span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: black;
+  animation: maquina 3s steps(40);
+
+}
+
+@keyframes maquina {
+    from {
+      width: 100%;
+    }
+}

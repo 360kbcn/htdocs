@@ -1,0 +1,436 @@
+// Owners
+.cuar-owner-field {
+	label {
+		display: block;
+		margin-bottom: 7px;
+	}
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+  -moz-box-sizing: @boxmodel;
+  box-sizing: @boxmodel;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+.cuar-page *, .cuar-page *:before, .cuar-page *:after {
+	-webkit-box-sizing: border-box; 
+	   -moz-box-sizing: border-box; 
+	        box-sizing: border-box;
+}
+ 
+.metabox-row {
+	margin: 1.5em 0 1em; 
+}
+table.metabox-row {
+	width: 100%;
+  border-spacing: 0;
+}
+table.metabox-row td.label {
+	width: 30%;
+}
+span.label {
+	display: inline-block;
+	min-width: 40%;
+	vertical-align: top;
+}
+
+.metabox-row input[type=text], .metabox-row select, .metabox-row textarea {
+	min-width: 200px;
+}
+
+.form-table input[type=text], .form-table select, .form-table textarea {
+	min-width: 200px;
+}
+
+a.cuar-round-button {
+	display: inline-block; 
+	width: 24px;
+	height: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	background: #666;
+	cursor: pointer;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+a.cuar-round-button .dashicons {
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+}
+
+a.cuar-round-button:hover {
+	background: #333;
+}
+
+a.cuar-round-button:visited,
+a.cuar-round-button:active,
+a.cuar-round-button:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button-primary.button-cuar {
+    background: #F83E0C;
+    border-color: #AD251E;
+    -webkit-box-shadow: inset 0 1px 0 rgba(173,37,30,.5),0 1px 0 rgba(0,0,0,.15);
+            box-shadow: inset 0 1px 0 rgba(173,37,30,.5),0 1px 0 rgba(0,0,0,.15);
+}
+.button-primary.button-cuar:hover {
+    background: #AD251E;
+    border-color: #AD251E;
+    -webkit-box-shadow: inset 0 1px 0 rgba(173,37,30,.5),0 1px 0 rgba(0,0,0,.15);
+            box-shadow: inset 0 1px 0 rgba(173,37,30,.5),0 1px 0 rgba(0,0,0,.15);
+}
+.button-primary.button-cuar:active,
+.button-primary.button-cuar:focus {
+    background: #AD251E;
+    border-color: #AD251E;
+    -webkit-box-shadow: inset 0 1px 0 rgba(173,37,30,.5),0 1px 0 rgba(0,0,0,.15);
+            box-shadow: inset 0 1px 0 rgba(173,37,30,.5),0 1px 0 rgba(0,0,0,.15);
+}
+
+.cuar-clearfix:before,
+.cuar-clearfix:after {
+  content:"";
+  display:table;
+}
+.cuar-clearfix:after {
+  clear:both;
+}
+.cuar-clearfix {
+  zoom:1;
+}
+
+/* -= Status */
+
+.cuar-congrats {
+	margin: 5px 0 15px;
+	padding: 1px 12px;
+	background: #fff;
+	border-left: 4px solid #7ad03a;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+		    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+	
+.cuar-congrats p {	    
+	font-size: 120%;
+}
+
+p.cuar-needs-attention {
+	border-left: 4px solid #dd3d36;
+}
+
+tr.cuar-needs-attention td {
+	background: #dd3d36;
+	color: #fff;
+}
+
+tr.cuar-is-inactive td {
+	opacity: 0.6;
+}
+
+div.cuar-needs-attention {
+	margin: 5px 0 15px;
+	padding: 1px 12px;
+	background: #fff;
+	border-left: 4px solid #dd3d36;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+		    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+div.cuar-needs-attention p {
+	margin: .5em 0;
+	padding: 2px;
+}
+
+.cuar-needs-attention .cuar-suggested-action {
+	margin-top: 20px;
+	padding: 20px 0 15px;
+	font-weight: bold;
+	font-size: 120%;
+	border-top: 1px #e0e0e0 solid;
+}
+
+.cuar-needs-attention .cuar-suggested-action .text {
+	display: inline-block; 
+	min-width: 150px;
+}
+
+.cuar-needs-attention .cuar-suggested-action .button {
+	margin: 0 30px;
+	min-width: 180px;
+	text-align: center;
+}
+
+.cuar-status-section h2 {
+	margin: 20px 0 30px;
+}
+
+.cuar-changelog-section ul {
+	list-style-type: disc;
+	padding: 0 0 1em 1.5em;
+}
+
+.error ul.cuar-with-bullets {
+	padding: 0 0 0 40px;
+	list-style-type: disc;
+}
+
+/* -= POST LISTING */
+
+.fixed .column-cuar_category {
+	width: 15%;
+}
+
+/* -= CONVERSATIONS ADMIN */
+
+.column-cuar_reply_count {
+	width: 5em;
+}
+
+.conversation-reply {
+	border-bottom: 1px solid #999;
+}
+
+.conversation-reply:last-child {
+	border-bottom: none;
+}
+
+.conversation-reply .meta {
+	font-weight: bold;
+}
+
+.conversation-reply .content {
+	padding: 10px;
+	margin-left: 10px;
+	border-left: 1px solid #ccc;
+}
+
+/* -= ADMIN MENU & ICONS */
+
+.dashboard-logo {
+	max-width: 80%;
+	margin: 0 auto 50px;
+}
+
+.dashboard-logo img {
+	max-width: 100%;
+	height: auto; 
+}
+
+/* -= ADD-ONS TAB */
+
+.cuar-addon {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box; 
+	        box-sizing: border-box;
+	        
+	float: left;
+	width: 49%;
+	margin: 1%;
+	padding: 10px;
+	border: 1px solid #eee;
+	background: #fafafa;
+
+    -webkit-box-shadow: 0px 3px 6px 0px #ddd;
+       -moz-box-shadow: 0px 3px 6px 0px #ddd;
+         -o-box-shadow: 0px 3px 6px 0px #ddd;
+            box-shadow: 0px 3px 6px 0px #ddd;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#ddd, Direction=180, Strength=6);
+
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cuar-addon.cuar-odd {
+    margin-right: 0;
+}
+
+.cuar-addon.cuar-even {
+    margin-left: 0;
+}
+
+.cuar-addon:hover {
+    -webkit-box-shadow: 0px 3px 6px 0px #aaa;
+       -moz-box-shadow: 0px 3px 6px 0px #aaa;
+         -o-box-shadow: 0px 3px 6px 0px #aaa;
+            box-shadow: 0px 3px 6px 0px #aaa;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=180, Strength=6);
+}
+
+.cuar-addon .cuar-addon-image img {
+	max-width: 33%;
+	float: left;
+}
+
+.cuar-addon .cuar-addon-title {
+	text-align: left;
+	text-decoration: none;
+    margin-top: 4px;
+    font-size: 1em;
+}
+
+.cuar-addon .cuar-addon-description {
+    text-align: left;
+    text-decoration: none;
+    margin-top: 4px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.cuar-addon .meta {
+    margin-left: 35%;
+    padding: 0 10px;
+}
+
+p.forcelinebreak {
+	display: block;
+	height: 0px;
+	width: 100%;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+	.cuar-addon {
+		float: left;
+		width: 100%;
+        margin: 0 0 15px;
+	}
+}
+
+
+.cuar-wizard ul li {
+}
+
+.cuar-wizard .cuar-block {
+	padding: 30px 10px;
+	background: #eee;
+}
+
+.cuar-wizard .cuar-block h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+}
+
+.cuar-wizard .cuar-block p, .cuar-wizard .cuar-block ul, .cuar-wizard .cuar-block h1, .cuar-wizard .cuar-block div {
+	margin: 20px auto;
+	max-width: 600px;	
+}
+
+.cuar-wizard .cuar-block ul {
+	list-style-type: disc;
+	padding-left: 40px;
+	line-height: 1.5em;
+}
+
+/* -= JQUERY.SELECT2 */
+
+.wp-admin .select2-container-multi .select2-choices .select2-search-choice {
+	border-radius: 0;
+	background-image: none;
+}
+
+.wp-core-ui .button.renew-license-button {
+    display: inline-block;
+    font-size: 0.95em;
+	margin-left: 15px;
+	margin-top: -7px;
+}
+.license-control  {
+	input {
+		max-width: 30%;
+		min-width: 270px;
+	}
+
+	a.button {
+		margin-left: 15px;
+	}
+
+	.cuar-ajax-container {
+		display: block;
+		margin: 12px 2px 0;
+		font-size: 0.8em;
+	}
+}
+
+/* -= RSS Feed items */
+
+.cuar-feed-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cuar-feed-content li {
+    background: #fff;
+    padding: 15px;
+    margin: 25px 0;
+
+    -webkit-box-shadow: 0px 3px 6px 0px #ddd;
+    -moz-box-shadow: 0px 3px 6px 0px #ddd;
+    -o-box-shadow: 0px 3px 6px 0px #ddd;
+    box-shadow: 0px 3px 6px 0px #ddd;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#ddd, Direction=180, Strength=6);
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cuar-feed-content li:hover {
+    -webkit-box-shadow: 0px 3px 6px 0px #aaa;
+    -moz-box-shadow: 0px 3px 6px 0px #aaa;
+    -o-box-shadow: 0px 3px 6px 0px #aaa;
+    box-shadow: 0px 3px 6px 0px #aaa;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=180, Strength=6);
+}
+
+.cuar-feed-content .cuar-feed-date {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.cuar-feed-content .cuar-feed-title {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cuar-feed-content .cuar-feed-summary {
+    color: #333;
+    margin-top: 15px;
+}
+
+.cuar-feed-content a {
+    text-decoration: none;
+}
+
+.cuar-feed-content .cuar-feed-image img {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 15px;
+}
+

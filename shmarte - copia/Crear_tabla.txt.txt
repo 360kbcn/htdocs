@@ -1,0 +1,22 @@
+  // Creacion de las tablas
+        $sqlcontact="create table personas(id integer primary key auto_increment, nombre varchar(30) not null, email varchar(50) unique);";
+        $resul=$val->exec($sqlcontact);
+        if($resul===false){
+          echo "<p id='Alerta'>No se ha podido crear la tabla Contactos</p>";
+          echo"<br>";
+          echo "<p>".$val->errorInfo()[2]."</p>";
+        }else{
+          echo "<p id='Bien'>Tabla Contactos Creada con Exito</p>";
+          echo"<br>";
+        }
+
+  $sqlcontact="create table relacion (id_conocedor integer, id_conocido integer, primary key (id_conocedor, id_conocido), foreign key (id_conocedor) references personas (id) on delete cascade, foreign key (id_conocido) references personas (id) on delete cascade );";
+        $resul = $val->exec($sqlcontact);
+        if($resul===false){
+          echo "<p id='Alerta'>No se ha podido crear la tabla relacion</p>";
+          echo"<br>";
+          echo "<p>".$val->errorInfo()[2]."</p>";
+        }else{
+          echo "<p id='Bien'>Tabla Relacion Creada y relacionada con Exito</p>";
+          echo "<br>";
+        }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Slot machine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Reglas</h2>
+                    <p>Hay un jugador y una banca. Se reparten dos cartas a cada uno. El objetivo es sumar 21 o lo más cercano pero sin pasarse. Las figuras valen 10 y los ases 1 u 11, dependiendo de lo que nos interese. El resto de cartas su valor. Una vez repartidas las dos cartas el jugador puede plantarse o pedir carta. Si pide carta y se pasa, ha perdido. Si no, otra vez puede pedir carta o pararse. Cuando se para es el turno de la banca.</p>
+
+                </div>
+                <div class="col-md-8">
+                    <h1 id="saldo">Saldo: 100 €</h1>
+                    <h2>Banca</h2>
+                    <div class="tapete" id="banca"></div>
+                    <h2>Jugador</h2>
+                    <div class="tapete" id="jugador"></div>
+                    <p id="puntos"></p>
+                    <p>
+                        <button class="btn btn-primary btn-lg" id="jugar">Jugar</button>
+                        <button class="btn btn-primary btn-lg" id="pedir">Pedir carta</button>
+                        <button class="btn btn-primary btn-lg" id="plantar">Plantarse</button>
+                    </p>
+                    <div id="mensajes"></div>
+                    <script src="js/cookies.js" type="text/javascript"></script>
+                    <script src="js/blackjack.js" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+.img-contenedor img {
+-webkit-transition:all .9s ease; /* Safari y Chrome */
+//-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */
+width:75%;
+
+}
+.img-contenedor:hover img {
+-webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+
+}
+.img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
+width:500px;
+height:500px;
+
+overflow:hidden;
+
+}

@@ -1,0 +1,239 @@
+
+        
+            #topbar
+            {
+                width: 1100px;
+                margin: 0 auto;
+                background-color:#FFFFFF;
+                height: 40px;
+            }
+            body
+            {
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            #logo
+            {
+                margin-top: 8px;
+                width:84px:
+                height:24px;
+                float:left;
+                margin-right:8px;
+            }
+            .topbar-section
+            {
+                float:left;
+                border-left: 1px #cccccc solid;
+                height:100%;
+            }
+            #signin-imagen
+            {
+                width: 30px;
+                margin: 5px 6px;
+                float: left;
+            }
+            #signin-texto
+            {
+                font-weight: bold;
+                font-size: 85%;
+                position:relative;
+                top: 14px;
+                padding-right:60px;
+            }
+            .topbar-menu
+            {
+                font-weight: bold;
+                font-size: 85%;
+                padding: 13px 15px 0 15px;
+                height: 27px;
+            }
+            #more-arrow
+            {
+                float:right;
+                margin-left:40px;
+            }
+            #search-box
+            {
+                background-color: #E4E4E4;
+                border: none;
+                font-weight: bold;
+                font-size:14px;
+                width:110px;
+                float:left;
+                margin: 5px 0px 5px 5px;
+                padding:5px;
+            }
+            #lupa
+            {
+                height:27px;
+                margin-top:5px;
+            }
+            .clear
+            {
+                clear:both;
+            }
+            #menu-bar-container
+            {
+                background-color: #BB1919;
+                border-top: 1px solid #CCCCCC;
+                width:100%;
+                height:70px;
+            }
+            #menu-bar
+            {
+                width:1100px;
+                margin: 0 auto;
+            }
+            #menu-bar-container-2
+            {
+                background-color: #A91717;
+                width:100%;
+                height:40px;
+            }
+            #menu-bar-2
+            {
+                width:1100px;
+                margin: 0 auto;
+            }
+            #menu-bar-2 a
+            {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                border-right: 1px solid #B84545;
+                position:relative;
+                top: 10px;
+                padding: 0 10px;
+                
+            }
+            #menu-bar-2 a:hover
+            {
+                text-decoration: underline;
+            }
+            
+            h1
+            {
+                padding:0;
+                margin:0;
+                color:white;
+                font-size: 40px;
+                font-weight: 300;
+                padding-top: 10px;
+            }
+            .no-border
+            {
+                border: none !important;
+            }
+            #flecha-abajo-roja
+            {
+                height:10px;
+                position:relative;
+                top:10px;
+            }
+            #page-container
+            {
+                width: 1100px;
+                margin: 0 auto;
+            }
+            h2
+            {
+                font-weight:normal;
+                font-size: 20px;
+                border-bottom: 3px solid #BB1919;
+                width:105px;
+            }
+            h3 a
+            {
+                color: black;
+                font-size: 35px;
+                text-decoration: none;
+            }
+            h3 a:hover
+            {
+                color: #1167A8;
+            }
+            #article-summary
+            {
+                color:#5a5a5a;
+                width:240px;
+                float:left;
+            }
+            #article-summary img
+            {
+                height:18px;
+                position:relative;
+                top:2px;
+                padding-right: 4px;
+            }
+            
+            .topic-link:hover
+            {
+                color:#1167A8;
+            }
+            .date
+            {
+                padding-right: 8px;
+                font-size:14px;
+                border-right: 1px solid #CCCCCC;
+            }
+            #article-container
+            {
+                float:left;
+                width:680px;
+                border-right: 1px solid #CCCCCC;
+                padding-right: 10px;
+            }
+            #main-article-image
+            {
+                width:400px;
+                margin-left:20px;
+            }
+            #article-hr
+            {
+                border-top: 1px solid #991717;
+                width: 50px;
+            }
+            .article-link
+            {
+                color:black;
+                text-decoration:none;
+                font-size:14px;
+            }
+            .topic-link
+            {
+                text-decoration:none;
+                color:#a61b1b;
+            }
+            #watch-listen
+            {
+                margin-left:20px;
+                width:360px;
+                float:right;
+                position:relative;
+                top:-25px;
+                left:-30px;
+            }
+            h4
+            {
+                font-size: 26px;
+                font-weight: normal;
+            }
+            .article-side-image
+            {
+                float:left;
+                width:120px;
+                margin-right:15px;
+            }
+            .watch-listen-link
+            {
+                text-decoration:none;
+                color:black;
+                font-weight:bold;
+                font-size:18px;
+            }
+            .watch-listen-link:hover
+            {
+                color:#1167AD;
+            }
+            

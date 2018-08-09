@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.10",
+        "slim/php-view": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    }
+}

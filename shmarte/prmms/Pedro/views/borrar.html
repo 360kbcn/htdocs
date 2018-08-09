@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Borrar datos</title>
+
+
+<!--  Falta implementar la conexion con la base de datos en el fichero mms_clase.php esta la funcion listado para que el Foreach de abajo pueda recorrerla y mostar los datos 
+
+
+-->
+
+</head>
+<body>
+	<main>
+       <table>
+         <thead>
+           <tr>
+             <td id="td1"><strong>Nombre</strong></td>
+             <td id="td1"><strong>Categoria</strong></td>
+           </tr>
+           <form class="" action="" method="post">
+           <?php
+            foreach ($datos_ddbb as $row) {
+              // Recorremos la tabla para poder pintar en pantalla los datso de la misma
+              echo "<tr>";
+              echo "<td>".$row['titulo']."</td>";
+              echo "<td>".$row['sinopsis']."</td>";
+              echo "<td>"."<a class ='derecha' title ='Borrar_Registro'href='?Eliminar=".$row['id']."'><img src='paper1.png'>"."</a>";
+              // Seleccion del dato id para el borrado del registro
+            };
+            // Llamamos al procedimiento borrar que esta al final del archivo mms_clase.php
+    	        if(isset($_GET['Eliminar'])){
+      			borrar($_GET['Eliminar']);// llamamos al Procedimiento Eliminar 
+    			}
+            ?>
+         </thead>
+       </table>
+     </main>
+
+</body>
+</html>

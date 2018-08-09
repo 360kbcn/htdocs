@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /shmarte/07082017Oscar
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

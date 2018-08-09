@@ -1,0 +1,140 @@
+*{
+
+}
+
+#Titulo  {
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color:rgba(137,147,190,0.5);
+  color:#232531;
+  text-align: center;
+  padding: 28px 28px 28px 28px;
+  font-size: 150%;
+  display: inline-block;
+}
+
+#Titulo2  {
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color:rgba(137,147,190,0.5);
+  color:#232531;
+  text-align: center;
+  padding: 18px 18px 18px 18px;
+  font-size: 75%;
+  display: inline-block;
+}
+
+#Titulo3 {
+  border: 2px solid black;
+  color:#232531;
+  text-align: center;
+  padding: 18px 18px 18px 18px;
+  font-size: 75%;
+  display: inline-block;
+}
+
+#Lot{
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+.topbar-menu
+{
+    margin: 15px 15px 15px 15px;
+    font-weight: bold;
+    font-size: 85%;
+    padding: 13px 15px 0 15px;
+    height: 27px;
+}
+
+.topbar-section
+{
+    float:left;
+    border-left: 1px #999999 solid;
+    height:100%;
+}
+
+.enunciados{
+
+   float: left;
+   font-size: 18px;
+
+}
+
+.margenes{
+  margin:0px 10px 0px 7px;
+}
+
+.margenes2{
+  margin:0px 7px 0px 150px;
+}
+
+.Selec{
+  background-color:rgba(137,147,190,0.5);
+  border: 2px solid black;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  width:150px;
+  float:left;
+}
+
+.Min{
+  background-color:rgba(137,147,190,0.5);
+  border-radius: 100px;
+  text-align: center;
+  border: 2px solid black;
+  width: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  margin: 0px 10px 0px 7px;
+}
+
+.btn2{
+  background-color:rgba(137,147,190,0.5);
+  border: 1px solid black;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+
+}
+
+.check{
+  background-color:rgba(137,147,190,0.5);
+  border-radius: 100px;
+  border: 2px solid black;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+}
+
+body{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.barra{
+  style=width:150px;height:200px;overflow:auto;
+}
+
+
+.nav1{
+  width: 500px;
+  padding: 0px 80px 0px 225px;
+  float: left;
+  font-size: 20px;
+}
+
+.nav2{
+  width: 150px;
+  padding: 0px 45px 0px 20px;
+  float: left;
+  font-size: 20px;
+}

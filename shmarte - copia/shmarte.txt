@@ -1,0 +1,515 @@
+funcion que devuelve el valor de numeros pares que hay en la matriz
+
+if ( numero % 2 == 0 )
+
+funcion recibe 2 arrays de 2 dimensiones genrear un terecer array donde 
+pondremos la suma de los valores que hay en cada celda de los primeros.
+
+Ejmeplo
+
+Primer Array               Segundo Array             Array Resultannte
+
+  1     1                       3    4                    4     5
+  2     6                       4    5                    6     11
+  
+  http://localhost/shmarte/XXXXXXX.php o html o lo que sea
+
+https://validator.w3.org/#validate_by_input+with_options  (Validador de Codigo)
+
+
+10/07/2017
+arrya2d que devuelva en un array simple la suma de las filas del array.
+
+14/07/2017
+php
+Crear dos paginas index.php y login.php
+Intentara llegar logarse en index, si no es correcto lo redireccionar al login para registrar, y si es correcto mostrar mensaje de 
+Bienvenida. y tambien boton cerrar sesión.
+
+17/07/2017
+añadir pag1.php y pag2.php mostrar lo que queramos 
+otro mas si pedimos la pag1 o pag2 y no estamos logeados nos manda a la pagina del login y una vez logueado nos devuelve a la pagina que hemos
+solicitado
+
+
+
+
+SQL Dia 1
+
+
+TABLA
+
+	persona
+
+nombre  |  edad    | mail
+Pau         40	     pau@gmail.com
+Maite	    12	     maite@hotmail.com
+Yolanda     38       yolanda@vigo.com	 	
+Manel       40 	     manel@yahoo.com
+
+
+Select * // Con el * todos from persona; 
+
+Consultas
+
+Select * from personas;  //Lista toda la tabla.
+Select nombre, edad, from persona;  // Nombre y apellidos de toda la base de datos.
+Select nombre, edad, from persona where edad > 20 ;  // Nombre y edad de todas las personas de la tabla mayores de 20 años.
+Select nombre, edad, from persona where edad >20 and edad <35;
+Select edad from persona; Todas las edades
+Select distinct edad from persona; La edad de 40 solo aparece 1 vez
+select count(*) from persona where edad = 40; // contar todas las edades de la tabla
+select max(edad) from persona; // muestra la edad maxima.
+select max(edad) as Mayor from persona; // as le damos Mayor como nombre de campo de los resultados
+select nombre from persona where edad >20 and edad<35; ===> selec nombre from persona where edad between 20 and 35; 
+select nombre, edad from persona where nombre in ("Pau","Maite"); selecciona nombre y edad de la tabla persona que se llamen Pau y Maite
+select nombre, edad from persona where not nombre in ("Pau","Maite"); que no se llamen Pau y Maite
+select nombre, edad from persona where nombre like "M%"; seleccion nombre y edad de la tabla personas cuyo nombre empiece por M
+select nombre, edad from persona where nombre like "____l"; _ guion bajo seleccion nombre y edad de la tabla personas cuyo nombre tenga 
+									 4 caracteres antes de la l
+
+Select nombre, edad, from persona where edad > 15 order by edad; Busca nombre y edad mayores de 15 y los ordenara por edad 
+
+Yolanda     38       yolanda@vigo.com	 	
+Pau         40	     pau@gmail.com
+Manel       40 	     manel@yahoo.com
+
+Select nombre, edad, from persona where edad > 15 order by edad, nombre ; Busca nombre y edad mayores de 15 y los ordenara por edad primero y despues 
+									  por el nombre
+Yolanda     38       yolanda@vigo.com	 	
+Manel       40 	     manel@yahoo.com
+Pau         40	     pau@gmail.com
+
+
+
+
+Ejercicios.
+
+SELECT Name
+from country
+WHERE Continent ='Europe'
+ORDER By Name;
+
+nombre de todos los paises y el continente para todos los paises poblacion 
+100.000 y 500.000
+Ordenador por continente y despues por nombre de pais
+
+SELECT Name, Continent
+from country
+WHERE Population >100000 and Population <500000
+ORDER by Continent, Name;
+
+esperanza de vida media de todos los paises Europa
+
+SELECT AVG(LifeExpectancy)
+FROM country
+WHERE Continent ='Africa';
+
+nombre de los paises que en 2 posicion del nombre una n y 4 posion a
+
+SELECT Name
+from country
+where Name like "_n_a%";   Antarctica
+
+
+SQL Dia 2
+
+	persona
+
+nombre  |  edad    | mail
+Pedro       30	     pedro@gmail.com
+Joan	    25	     Joan@hotmail.com
+Yolanda     38       yolanda@vigo.com	 	
+Manel       40 	     manel@yahoo.com
+Antonio     25       Antonio@max.com
+
+
+--------------------------------------------
+select max(edad)
+from persona;
+
+=50
+
+select nombre from persona where edad =50;
+
+Metodo abreviado 
+
+select nombre from persona where edad = (select max(edad) from persona);
+
+-------------------------------------------
+
+Select edad, count(*) from persona grooup by edad;
+
+Ejercicios
+Nombre del pais con mas habitantes
+
+SELECT Name
+from country
+where Population = (SELECT max(Population) FROM country);
+
+Consulta que muestre todo los continentes y el numero de pais por contiente.
+ordenado por paises de mayor a menor.
+
+SELECT Continent, count(*) as Paises as declar variable paises donde se agrupa la suma del continente ya que ls linea de la tabla tiene continente y pais ;)
+from country
+group by Continent
+ORDER by Paises DESC
+
+saber la superficie total de todos los paises en los que ha reinado Isabel II
+
+SELECT sum(SurfaceArea) as "Isabel de Inglaterra"
+from country
+WHERE HeadOfState ='Elisabeth II'
+
+saber el nombre de los paises en que si esperanza de vida esta por encima de la media de vida de todos los paises
+mostrar esperanza de vida del pais y ordenar de mayor a menor
+
+SELECT name, LifeExpectancy
+from country
+WHERE LifeExpectancy> (SELECT AVG(LifeExpectancy) from country )
+order by LifeExpectancy DESC
+
+saber cuanto paises hay en cada continente que tenga esperanza de via por encima de la media 
+
+SELECT Continent, count(*)
+from country
+WHERE LifeExpectancy > (select AVG(LifeExpectancy) from country)
+GROUP by Continent
+
+SQL Dia 3
+
+Alumno 
+
+nombre	Asignatura	nota
+aa	mates		3
+bb	leng		6
+cc	mates		6
+dd	dibujo		8
+ee	leng		5
+ff	mates		8
+
+having esteblece condiciones como el where pero a nivel de grupo
+
+nota media de las asignaturas que este por debajo del 6
+
+select Asignatura, avg(nota) from Alumno group by asignatura having avg(nota)<6;
+
+para limiatar a solo aprobados
+
+select Asignatura, avg(nota) from Alumno where nota >= 5 group by asignatura having avg(nota)<6;
+
+Mostrat todos los continente y paises siempre y cuando tenga un minimo de 10 paises.
+
+SELECT Continent, count(*)
+from country
+GROUP by Continent
+HAVING count (*)>=10 
+
+Obtener una lista de todos los paises que tiene esperanza de via superior a la media de vida europea.
+
+SELECT Name, LifeExpectancy
+from country
+WHERE LifeExpectancy > (SELECT avg(LifeExpectancy) FROM country WHERE Continent="Europe")
+
+Saber la poblacion que hay en cada continente pero solo continentes con menos 500.000.000 de personas
+
+SELECT Continent, sum(Population)
+FROM country
+GROUP by Continent
+HAVING  sum(Population)< 500000000
+
+Y ademas los paises tiene una esperanza de vida superior a la media de vida europea
+
+SELECT Continent, sum(Population)
+FROM country
+WHERE LifeExpectancy > (SELECT avg(LifeExpectancy) FROM country WHERE Continent="Europe")
+GROUP by Continent
+HAVING  sum(Population)< 500000000
+
+
+SQL Dia 4
+
+Tablas
+
+Alumno 								Asignatura			estudia
+
+id	nombre		asignatura	mail			id	nombre			alumno	asignatura	nota
+1	aa		mates		sdlkfjs			1	Programacion		1	1		7
+2	bb		leng		sadñjfk			2	Dibujo			2	1		10
+3	cc		mates		añsa							2	2		9
+4	dd		dibujo		añsk							3	1		5
+5	ee		leng		añsld
+6	ff		mates		asdk
+
+Nombre de los alumnos y nota que han sacado en la asignatura de Dibujo
+
+Select a.nombre, e.nota
+from alumno a, estudia e 	//alumno a "la a es un alias que hace referncia a la tabla igual la e", estudia e
+where e.asignatura=2;
+
+nombre	nota
+pepe	9 *
+pepe	5 *	
+maria 	9
+maria 	5 *
+jordi	9 *
+jordi	5
+
+
+Para eliminar los datos que tiene * podemos usar condicion AND
+
+Select a.nombre, e.nota
+from alumno a, estudia e 
+where e.asignatura=2 and e.alumno=a.id;
+
+También podemos usar Join
+
+Select a.nombre, e.nota
+from alumno a join estudia e on (e.alumno=a.id)
+where e.asignatura=2 ;
+
+NOTA:
+Left Join 
+Right Join
+
+Mirar referencias
+
+Cuantas Ciudades hay en cada pais solo paises que empicen por a y tengan 7 caracteres
+
+SELECT co.Name, COUNT(*) as Ciudades
+from country co, city ci
+WHERE co.Code = ci.CountryCode and co.Name like "A______"
+Group by co.name
+
+
+Queremos saber todos los paises que se habla catalán
+
+Select co.Name
+From country co, countrylanguage cl
+where co.Code = cl.countryCode AND cl.Languaje="catalan";
+
+Queremos saber pais que el catalan es un idioma oficial.
+
+Select co.Name
+FROM country co, countrylanguage cl 
+where co.Code = cl.CountryCode and cl.Language="catalan" AND
+cl.IsOfficial="T";
+
+El nombre de todos los paises y el numero de idiomas para todos los paises que se 
+hablan mas de 8 idiomas
+
+SELECT co.Name, COUNT(*) As Idioma
+from country co, countrylanguage cl
+where co.Code = cl.CountryCode
+GROUP BY co.Name
+HAVING COUNT(*)>8;
+
+
+SQL Dia 5
+
+ANY and SOME Especifica que se debe realizar una comparación.
+
+Select nombre from persona where edad > some (select edad from persona);
+
+Select nombre from persona where edad >= all (select edad from persona);
+
+Queremos saber el nombre de todos los paises que tengan una poblacion mayor a algunos de los paises 
+que su nombre empiece por a.
+
+SELECT Name, Population
+from country
+WHERE Population > some (select Population from country WHERE Name like "A%");
+ORDER by Name
+
+Queremos saber el nombre de todos los paises que tengan una poblacion > que los paises
+que se hayan independizado antes 1900.
+
+SELECT Name, Population, IndepYear
+from country
+WHERE Population > some (SELECT Population from country where IndepYear < 1900 );
+ORDER by Name
+
+Queremos saber el nombre de todos los continentes y el numero de paises de esos continentes
+para todos los continentes en que su numero de pais sea mayor o igual que el numero de paises 
+de algun continente que en su nombre tenga al menos 8 caracteres y termine con a.
+
+SELECT Continent, COUNT(*)
+From country
+GROUP by Continent
+HAVING COUNT(*) >= all (SELECT count(*) from country where Continent Like "_______%a" 
+                        group by Continent)
+
+
+SQL Dia 6
+
+https://es.scribd.com/contact
+http://tipsparaisc.blogspot.com.es/2010/10/practicando-sql-parte-4.html
+
+Selecciona el nombre, apellido y numero de pelicu
+
+SELECT actores.first_name, actores.last_name, pelis.film_id, COUNT(*)
+from actor actores, film_actor pelis
+GROUP BY actores.first_name
+HAVING COUNT(*) >10
+
+
+SQL Dia 7
+
+Crear bases de datos
+
+	alumno			asignatura
+id	nombre	mail	id	nombre
+
+		alum-asig
+	alum	asig 	nota
+
+
+create [database] nombre
+	[tabla]
+
+create database cole;
+  use cole;
+
+  create table asignatura(
+    id integer primary key auto_increment,
+    nombre varchar(30) not null
+  );
+
+  create table alumno(
+      id integer primary key auto_increment,
+      nombre varchar(30) not null, mail varchar(50) unique
+    );
+
+  create table alum_asig(
+    alum integer,
+    asig integer,
+    nota float,
+    primary key (alum, asig),
+    foreign key (alum) references alumno(id),
+    foreign key (asig) references asignatura(id)
+
+  );
+
+
+Introduccion de datos 
+
+Tabla Alumnos
+
+INSERT INTO alumno (nombre, mail) VALUES ("Macario","macario@jotamail.com")
+
+Tabla Asignatura
+
+INSERT INTO asignatura (nombre) VALUES ("Mates"),("C++"),("php")
+
+
+SQL Dia 8
+
+Actualizar datos de tabla, borrar datos de tablas y eliminar base de datos.
+
+Ejemplo
+
+Actualizar tabla
+
+update alumno (tabla Alumnos)
+set mail (campo )= "pp@killer.com"
+WHERE id = 1 (condicion id = 1)
+
+update alum_asig
+set nota = nota +5 Optimiza el campo nota en 5
+
+
+Delete tabla
+
+Delete from tabla
+where condicion
+
+Ejemplo
+
+delete from asignatura (tabla asignatura)
+where id = 1 (Condicion id = 1)
+
+Borrar una base de Datos
+
+drop DATABASE cole
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+h1:hover{
+  color: red;
+}
+
+#cabecera p{
+  display:none;
+}
+
+#cabecera:hover p{
+  display:block;
+}

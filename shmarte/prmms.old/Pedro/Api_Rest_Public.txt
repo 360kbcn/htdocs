@@ -1,0 +1,9 @@
+Hola Equipo 
+Mi archivo es el Api_Rest_Public.zip
+
+Esta dividio entre lo que tiene que ir en el root y el views
+
+sludos
+
+Pedro.
+

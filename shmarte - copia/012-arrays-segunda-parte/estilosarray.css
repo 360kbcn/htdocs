@@ -1,0 +1,60 @@
+body{
+  font-size: 32px;
+}
+
+p{
+  font-size: 1em;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 1em;
+}
+
+th{
+  border: none;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+h1{
+  background-color: rgb(150,200,255);
+  padding: 0.5em;
+  color:white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-shadow: 0 0 2px black;
+}
+
+h2{
+  padding-left: 0.5em;
+  background: linear-gradient(white 70%,rgb(150,200,255));
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+h3{
+  font-size: 0.8em;
+  font-variant: small-caps;
+}
+#diagrama {
+  font-family: monospace;
+}
+
+#diagrama th{
+  text-align: right;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  border: none;
+  border-right: 1px solid gray;
+  padding-right: 5px;
+}
+
+#diagrama td{
+  border: none;
+}

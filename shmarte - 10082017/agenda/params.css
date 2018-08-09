@@ -1,0 +1,52 @@
+*{
+
+}
+
+#titulo{
+  position: relative;
+  background-color: #C4C7C8;
+  color:#1A7796;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+#titulo2{
+  position: static;
+  background-color: white;
+  color:black;
+  text-align: center;
+  font-size: 18px;
+}
+
+#td1{
+  height: 150;
+  aling: center;
+  border: 5px;
+}
+
+#td2{
+  height: 500;
+  width: 450;
+  border: 1px;
+
+}
+
+#input1{
+  background-color:white;
+  color:black;
+  position: relative;
+  left: 30%;
+  text-align: center;
+  font-size: 18px;
+}
+
+#input2{
+  background-color:white;
+  color:black;
+  position: relative;
+  left: 30%;
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,77 @@
+<?php
+
+function datos(){
+
+global $libros;
+
+$libros = [
+    [
+        "título"=>"El Golem",
+        "autor"=>"Gustav Meyrink",
+        "genero"=>"novela",
+        "resumen"=>"El Golem recoge una antigua leyenda relacionada con el gran rabino Loew de Praga (1512-1609) y con imágenes vigorosas evoca los misterios del gueto de Praga. El Golem es una figura de arcilla animada por obra de la cábala, para defender a los judíos, pero que se escapa fácilmente del control y provoca catástrofes."
+    ],
+    [
+        "título"=>"Las aventuras de Alicia en el país de las maravillas",
+        "autor"=>"Lewis Carroll",
+        "genero"=>"cuento",
+        "resumen"=>"Es la historia de un mágico sueño. Mientras permanece sentada con su hermana en el bosque, Alicia se levanta y persigue a un conejo que se le ha parecido. De pronto cae, en la madriguera, en medio de un montón de hojas secas."
+    ],
+    [
+        "título"=>"Planilandia",
+        "autor"=>"Edwin Abbott",
+        "genero"=>"novela",
+        "resumen"=>"¿Cómo sería la existencia en un mundo de dos dimensiones? ¿Y de una sola? ¿Y de ninguna dimensión? Y, por encima de las tres dimensiones, ¿existen espacios de 4, 5, 10 o más dimensiones? Y, si existen, ¿se puede conectar con ellos?"
+    ],
+    [
+        "título"=>"El horror de Dunwich",
+        "autor"=>"H.P. Lovecraft",
+        "genero"=>"cuento",
+        "resumen"=>"Maestro consumado de un género hibrido de fantasía ónírica y ciencia ficción, creador del llamado “cuento materialista de terror” y buen conocedor de los recursos técnicos de la literatura clásica sobre esos temas, H.P. Lovecraft fue el inspirador de una escuela iniciática y el inventor de un complejo universo de mitos y una abigarrada cosmogonía que aspiraban, simultaneamente, a la verosimilitud y al asombro. Su originalidad radica en haber trasladado los resortes del género desde un más allá sobrenatural, que había perdido vigencia y efectividad, a un mundo de abominaciones cuya plausibilidad respaldan la ciencia, la razón y, en última instancia, deseos y temores ancestrales."
+    ],
+    [
+        "título"=>"El corazón delator",
+        "autor"=>"Edgar Allan Poe",
+        "genero"=>"cuento",
+        "resumen"=>"En este cuento Edgar Allan Poe explora la perdición del ser humano por el odio gratuito e irracional que se deja crecer en el corazón de los asesinos.
+        El narrador está haciendo un recuento de su actuación hasta explicar su propio arresto por los oficiales y el odio que sentía crecer por un anciano y  su ojo."
+    ],
+    [
+        "título"=>"El Señor de los Anillos",
+        "autor"=>"J. R. R. Tolkien",
+        "genero"=>"novela",
+        "resumen"=>"El Señor de los Anillos (título original en inglés: The Lord of the Rings) es una novela de fantasía épica escrita por el filólogo y escritor británico J. R. R. Tolkien.
+        Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas. La novela narra el viaje del protagonista principal, el hobbit Frodo Bolsón, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el Señor oscuro Sauron."
+    ]
+];
+
+return $libros;
+
+}
+
+function titulos($str2){
+
+$val=datos();
+
+$tl_libro = array_column($val, 'título'); // he encontrado esta sentencia array_column qye me permite crear un array con el titulo de los libros
+
+
+return ($tl_libro);
+}
+ ?>
+
+ <?php
+
+ function libro($str3){
+
+
+  $val=datos();
+
+
+  return $val[$str3];
+
+
+ }
+
+
+  ?>

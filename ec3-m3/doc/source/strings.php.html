@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+
+/**
+* funciones
+*
+* @author 360k &lt;360k.cat@gmail.com&gt;
+* @license AGPL
+*/
+namespace Lib\strings;
+
+/**
+*
+*Cadena &quot;&lt;-&gt;&quot; en medio en un cojunto de caracteres.
+*
+*Recivimos una $cadena, y tenemos que comprobar si la siguiente serie &quot;&lt;-&gt;&quot;,
+*aparece en medio. Se considerar&aacute; que est&aacute; en medio si el n&uacute;mero de caracteres que hay
+*antes y despu&eacute;s difieren como mucho en una unidad. devolverenos TRUE de lo contrario FALSE.
+*
+*@example Secuencia ('asd&lt;-&gt;asd').
+*
+*
+*Se comprueba si &lt;-&gt; estan en medio.
+*
+*Si es que no se devolvera False
+*
+*De lo contrario se comprobara si a los lados se encuentra &lt;&gt;
+*
+*Si alguno de estos dos elementos no estuviera en la posicion correcta se devolveria False
+*
+*si no devolvera TRUE.
+*
+*Tambien se considera que esta en medio cuando sea una posicion menos y mas
+*por la posibilidad de que el medio pudiera ser impar.
+*
+*@param string $cadena donde recibimos la cadena string.
+*
+*@return boolean devuelve un True si es correcto y False si no se comple la condici&oacute;n.
+*
+*/
+function flechaMedio($cadena){
+
+// TODO Resto documentar.
+
+
+    return false;
+}
+?&gt;
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

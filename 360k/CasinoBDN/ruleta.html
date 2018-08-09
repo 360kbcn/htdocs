@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ruleta</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="css/portfolio-item.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="param.css">
+
+      <script type="text/javascript" src="TweenMax.min.js"></script>
+      <script type="text/javascript" src="Winwheel.min.js"></script>
+      <script src="jquery.min.js"> </script>
+</head>
+<body>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Casino-BDN</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="slots.html">Slots</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dados.html">Dados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blackJack.html">Black-Jack</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-slots" >
+        <div class="row align-items-center justify-content-center">
+       <div class ="col-md-6 mx-auto">
+            <table>
+              <tr>
+                <td>
+                  <canvas id="canvas" width="350" height="350"></canvas>
+              </td>
+              </tr>
+            </table>
+        </div>
+          <div clas= "col-md-2 mx-auto">
+            <img class="slots" src="" >
+            <div clas= "col-md-4 mx-auto">
+              <tr>
+                <td><p><strong>Elige un numero del Tapete</strong></p></td>
+                <td><p><strong>Apuestas de 100€</strong></p></td>
+                <td>
+                  <input id="apuesta" type="text" value="">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="button" id="click" onclick="push()" value="Push" >
+                </td>
+              </tr>
+            </div>
+            <div id="resultado"></div>
+            <div id="Numero"></div>
+            <div id="Saldo"></div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="ruleta.js">
+      </script>
+
+</body>
+
+<!-- Footer -->
+<footer class="py-2 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; 360K Catalonia 2018</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="slots.js"></script>
+
+</html>

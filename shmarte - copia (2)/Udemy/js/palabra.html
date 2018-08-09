@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script JS</title>
+</head>
+<body>
+   <h1>Dime la Palabra magica</h1>  
+   <input type="text" id="entradaUsuario" placeholder="Palabra">
+   <button id="btn1">Comprueba</button>
+   
+   <script type="text/javascript">
+       document.getElementById("btn1").onclick = function(){
+        var palabra="porelculo";    
+        var textoUsuario;
+           
+        textoUsuario = document.getElementById("entradaUsuario").value;
+        if (textoUsuario == palabra ){
+            
+            alert("A ti Maricon");
+            
+            }   else{
+            alert("No te conozco")    ;
+            }
+       }
+       
+       
+    </script>
+    
+</body>
+</html>

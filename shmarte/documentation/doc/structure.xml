@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.8.5">
+  <partials/>
+  <file path="mates.php" generated-path="mates.html" hash="85fe17d5cb0c0532cbc2aabae9506ba9" package="Default">
+    <docblock line="0">
+      <description>Libreria de funciones matemáticas.</description>
+      <long-description></long-description>
+      <tag name="author" line="0" description="anonimo" link="mailto:anonimo@server.com"/>
+      <tag name="license" line="0" description="GPL" link="http://opensource.org/licenses/GPL-3.0"/>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <function namespace="ejemplo\mates" line="29" package="Default">
+      <name>suma</name>
+      <full_name>\ejemplo\mates\suma()</full_name>
+      <docblock line="29">
+        <description>Suma de dos numeros enteros.</description>
+        <long-description></long-description>
+        <tag name="package" line="29" description="Default"/>
+        <tag name="param" line="29" description="&lt;p&gt;Primer numero a sumar.&lt;/p&gt;" type="integer" variable="$a">
+          <type>integer</type>
+        </tag>
+        <tag name="param" line="29" description="&lt;p&gt;Segundo numero a sumar.&lt;/p&gt;" type="integer" variable="$b">
+          <type>integer</type>
+        </tag>
+        <tag name="return" line="29" description="Resultado de la suma entre $a y $b." type="integer">
+          <type>integer</type>
+        </tag>
+        <tag name="deprecated" line="29" description="4 No uses mas esta funcion"/>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$a</name>
+        <default></default>
+        <type>integer</type>
+      </argument>
+      <argument line="0" by_reference="false">
+        <name>$b</name>
+        <default></default>
+        <type>integer</type>
+      </argument>
+    </function>
+    <function namespace="ejemplo\mates" line="44" package="Default">
+      <name>sumaArray</name>
+      <full_name>\ejemplo\mates\sumaArray()</full_name>
+      <docblock line="44">
+        <description>Suma todos los valores del array pasado como argumento.</description>
+        <long-description></long-description>
+        <tag name="package" line="44" description="Default"/>
+        <tag name="param" line="44" description="&lt;p&gt;Array dde enteros que se quieren sumar.&lt;/p&gt;" type="array&lt;mixed,&gt;" variable="$ar">
+          <type>array&lt;mixed,&gt;</type>
+        </tag>
+        <tag name="return" line="44" description="el resultado de sumas todos los números del array de entrada." type="integer">
+          <type>integer</type>
+        </tag>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$ar</name>
+        <default></default>
+        <type>array&lt;mixed,&gt;</type>
+      </argument>
+    </function>
+    <markers>
+      <todo line="31">Esta por terminar</todo>
+    </markers>
+    <source>eJx1ks9OwzAMxu9IvIMPPbCBNg7cxvgjgbggQIwbcPBaw4IapzgJEkI8DK/BdS+G0xStMKjUJk0+259/yf5hs2g2NzY3AMbDYRqGcG7mQmIQKoKHyKVxTB4sBrLLj2BK9KNW2H6OMIaFE0B2bKyD/W5y5EleSEalswc9dW1KYk9wdnW+Wl19xtkKoyXfYElAT2Sb2t2l6n7yy+gs2tZk5TxwtCQ6Eoc09h02KGjBcIAC4UqMCjs5IHjNIaM14Rxm9Bi5cn8qe8mFQhRug67JxzqgxqinOgckP0Kp8Ksm7buqqBEqta0K9uDCQfQtZO3AB/zmvkYmrQfdaJNvFbijWQd5Kz3j8c3lySWcphSNnoqysIZR0v5bFnWGC9wu5pO09P4X1eAS1FrfF6ydqLWKakARfIUGfWpST1axyKPy4eB6rUEGeXuvRQSO25hKkXRHA8+RQK/AczQkxGtc+0i1pvSpJq3vmePlZz72lbtcSLDC0b/gWk9KTwYdlEJXYQq7k/z7oB1juYAkAS1Y8OAbX9ZuTwvutO8/sermiqpODvX2fwG8Svbi</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="ejemplo" full_name="ejemplo">
+    <namespace name="mates" full_name="ejemplo\mates"/>
+  </namespace>
+  <deprecated count="1"/>
+</project>

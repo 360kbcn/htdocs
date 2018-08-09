@@ -1,0 +1,70 @@
+*{
+
+}
+
+#h1{
+  background-color: #F9B66B;
+  color: #0F1069;
+  text-align: center;
+  font-size: 40px;
+}
+
+#h2{
+  background-color: #F9B66B;
+  color: #0F1069;
+  border-bottom: 1px;
+  border-left: 20px;
+  text-align: left;
+  font-size: 25px;
+
+}
+
+
+nav ul{
+
+  list-style: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  background-color: #F9B66B;
+  color: black;
+  display: block;
+  padding: 5px;
+  border: 1px solid white;
+
+}
+
+nav a:hover{
+  background-color: #EBF16B;
+  color: black;
+}
+
+
+nav{
+  float: left;
+  width: 20$;
+}
+
+main {
+  float: left;
+  width 80%;
+}
+
+
+section  {
+  border: 1px dashed grey;
+  background-color: beige;
+  padding: 2em:
+  margin: 1em;
+
+}
+
+section a {
+  color:red;
+}
+
+
+
+*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <style type="text/css">
+        .circulo{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 50px;
+            border-radius: 50%;
+        }
+        #circulo-rojo{
+            background-color: red;
+        }
+        #circulo-azul{
+            background-color: skyblue;
+        }
+        #circulo-amarillo{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="circulo-rojo" class="circulo"></div>
+    <div id="circulo-azul" class="circulo"></div>
+    <div id="circulo-amarillo" class="circulo"></div>   
+    <button id="btn">Hacer Visibles los Circulos </button>
+    
+    <script type="text/javascript" >
+        document.getElementById("circulo-rojo").onclick = function(){
+            document.getElementById("circulo-rojo").style.visibility="hidden";
+        }
+        document.getElementById("circulo-amarillo").onclick = function(){
+            document.getElementById("circulo-amarillo").style.visibility="hidden";
+        }
+        document.getElementById("circulo-azul").onclick = function(){
+            document.getElementById("circulo-azul").style.visibility="hidden";
+        }
+        
+        document.getElementById("btn").onclick = function(){
+            document.getElementById("circulo-rojo").style.visibility="visible";
+            document.getElementById("circulo-amarillo").style.visibility="visible";
+            document.getElementById("circulo-azul").style.visibility="visible"; 
+        }
+        
+    </script>
+        
+</body>
+</html>

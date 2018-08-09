@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Slot machine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Reglas</h2>
+                    <p>Para comenzar el juego, durante lo que se conoce como «tiro de salida», el jugador necesita realizar una apuesta que se conoce como «línea de pase», en la que se busca obtener un siete (conocido como «siete natural» o «siete ganador») o un once en la combinación de dados para ganar la apuesta, que paga uno a uno. Si por el contrario obtiene un dos, tres o doce (números conocidos como «craps») pierde automáticamente su apuesta y necesitará colocar de nuevo una apuesta para seguir tirando. Si durante el primer lanzamiento no obtiene un siete u once (con que gana), o un dos, tres o doce (con que pierde), el juego entrará en una segunda etapa, en la que se marcará el «punto» en el número que se obtenga en dicho lanzamiento (cuatro, cinco, seis, ocho, nueve o diez). En esta etapa, el tirador buscará volver a obtener ese número en los dados, con lo que ganará el «roll» o «ronda», antes de obtener un siete, llamado «siete fuera» o «seven out». Si logra repetir el número del punto, el jugador ganará su apuesta y se le pagará uno a uno el monto. Si por el contrario si aparece un siete, perderá su apuesta. En ambos casos se considera que la ronda ha terminado y el juego vuelve a comenzar, aunque si la ronda culminó debido a un siete fuera se designará un nuevo tirador de entre los distintos jugadores.</p>
+                    
+                </div>
+                <div class="col-md-8">
+                    <h1 id="saldo">Saldo: 100 €</h1>
+                    <img id="dado1" src="img/dado1.png" alt=""/>
+                    <img id="dado2" src="img/dado2.png" alt=""/>
+                    <p>
+                        <button class="btn btn-primary btn-lg" id="jugar">Jugar</button>
+                        <button class="btn btn-primary btn-lg" id="tirada">Tirada</button>
+                    </p>
+                    <div id="objetivo"></div>
+                    <div id="mensajes"></div>
+                    <script src="js/dados_1.js" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

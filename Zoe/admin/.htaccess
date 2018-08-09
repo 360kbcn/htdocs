@@ -1,0 +1,4 @@
+RewriteEngine Off
+RewriteBase /pau/m-2/practica_final/admin/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

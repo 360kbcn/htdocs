@@ -1,0 +1,23 @@
+div{
+  display: inline-block;
+  width: 200px;
+  height: 345px;
+  border: solid 2px darkseagreen;
+  background: linear-gradient(greenyellow, coral);
+  box-shadow: 10px 10px 5px black;
+  transition:transform 3s;
+}
+
+div:hover{
+  transform:rotate(-360deg);
+}
+
+h1 {
+  font-family: 'Joti One', cursive;
+  text-shadow: 5px 5px 5px #aaa;
+}
+
+p{
+  text-shadow: -1px 0 #090, 1px 0 #090, 0 1px #090, 0 -1px #090;
+   color: #fff;
+}

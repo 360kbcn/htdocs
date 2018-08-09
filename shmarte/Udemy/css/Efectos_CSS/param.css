@@ -1,0 +1,57 @@
+#prueba {
+  width: 500px;
+  height: 300px;
+  border: solid 2px grey;
+  background-image:url("smile.jpg"), url("bio.png");
+  background-position: left top, right bottom;
+  background-repeat: repeat-y, repeat-x;
+  background-size: 100px 100px, 200px 200px;
+}
+
+#elem1{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: solid 4px black;
+  background-image: url("bio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: solid 2px grey;
+  box-shadow: 10px 10px 5px black;
+}
+
+h1{
+  text-shadow: 10px 10px 5px blue,
+                0 0 25px darkblue,
+                0 0 5px ligthblue;
+}
+
+#elem2{
+  background: linear-gradient(cadetblue, darkred);
+
+}
+
+#elem3{
+  background: linear-gradient(darkseagreen, deepskyblue);
+}
+
+#elem4{
+  background: linear-gradient(yellow, greenyellow);
+  border-radius: 50%;
+}
+
+#imagen{
+  width: 128px;
+  height: 128px;
+  border: solid 2px black;
+  background-image: url("bio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

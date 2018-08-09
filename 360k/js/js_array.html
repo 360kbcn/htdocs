@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Array en js</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var tweets =["Buenos dias", "Me gustan los cortados"];
+    alert(tweets[0]);
+    // console.log(tweets.length); Muestra los datos que hay en el Array y con el .length muestra el numero de valores que hay en el array.
+    tweets.push("Vuelta al trabajo:"); // con el push añade valores al array
+    tweets.splice(1,1); //splice elimina elementos del Array.
+    tweets.splice(1,1,"Nuevo elemento insertado"); //splice tambien sirve para insertar valores en arrays.
+    alert(tweets[1]);
+    console.log(tweets);
+  </script>
+</body>
+</html>

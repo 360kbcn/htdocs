@@ -1,0 +1,42 @@
+body{
+  width: 800px
+  height: 600px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p{
+  color: yellow;
+  font-size: 8px;
+}
+
+.data{
+width: 50px;
+height: 50px;
+margin: 4px;
+}
+
+#cuadrado1{
+border-radius: 10%;
+background-color: darkred;
+order:2;
+flex-grow: 1;
+}
+
+#cuadrado2{
+border-radius: 10%;
+background-color: darkcyan;
+flex-grow: 2;
+flex-basis: 20px;
+}
+
+#cuadrado3{
+border-radius: 10%;
+background-color: darkblue;
+order: -1;
+flex-grow: 1;
+flex-basis: 30px;
+}

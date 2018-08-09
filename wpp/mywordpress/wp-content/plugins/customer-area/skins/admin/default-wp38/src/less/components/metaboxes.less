@@ -1,0 +1,147 @@
+/** METABOX FORMS */
+
+.postbox .inside {
+  .row {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 -7px 0 0;
+
+    &:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+  }
+
+  .block {
+    display: block;
+    box-sizing: border-box;
+    padding: 0 7px;
+  }
+
+  .form-group {
+    box-sizing: border-box;
+    float: left;
+    padding: 7px 0;
+    width: 100%;
+
+    .control-label {
+      display: block;
+      margin: 0 0 7px 2px;
+    }
+
+    &.disabled .control-label {
+      opacity: 0.5;
+    }
+
+    .form-control {
+      width: 100%;
+    }
+
+    &:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+  }
+
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+
+/** MORE STUFF */
+
+.postbox .inside {
+  table.widefat.no-border {
+    border: none;
+    margin: 4px 0;
+    th, td {
+      padding: 4px 0;
+    }
+    td:first-child {
+      padding-right: 5px;
+    }
+    td:last-child {
+      padding-left: 5px;
+    }
+  }
+}
+
+/** MORE STUFF */
+
+.postbox .inside {
+  .cuar-hint {
+    color: #999;
+  }
+
+  .cuar-file-attachments {
+    .cuar-file-attachment {
+      position: relative;
+      border: 1px solid #e0e0e0;
+      background: #fafafa;
+      padding: 4px 7px;
+      margin: 4px 0;
+      min-height: 28px;
+      line-height: 28px;
+
+      &.cuar-state-pending {
+        background-color: #D4E9FF;
+      }
+      &.cuar-state-error {
+        background-color: #FF777F;
+      }
+      &.cuar-state-success {
+        background-color: #fafafa;
+      }
+
+      .cuar-caption {
+        display: inline-block;
+      }
+
+      .cuar-editable-caption {
+        input {
+          background: transparent;
+          min-width: 200px;
+          border: none;
+          border-bottom: 1px solid #aaa;
+          padding: 0;
+          font-size: 13px;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+      .cuar-progress {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+
+        .indeterminate {
+          display: block;
+          position: absolute;
+          right: 8px;
+          bottom: 0;
+          height: 100%;
+          background-position-x: 100%;
+          background-position-y: 8px;
+        }
+
+        .determinate {
+          display: none;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

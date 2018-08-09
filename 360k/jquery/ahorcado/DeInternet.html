@@ -1,0 +1,100 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+/*********************
+*Codeado por Linkgl *
+*Agradecimientos a: *
+*Kenichi *
+********************/
+
+var letra;
+var espacios;
+var errores = 0;
+var total="";
+
+function mostrar(){
+var n;
+n=Math.floor(Math.random()*5);
+espacios=palabras[n].length;
+palabra=palabras[n];
+document.write('La palabra tiene ' + espacios + ' letras <br />');
+}
+
+function validar(e) {
+t = (document.all) ? e.keyCode : e.which;
+document.f1.letra.value='';
+letra=String.fromCharCode(t);
+var verificado = 0;
+for (var i = 0;i < espacios;i++)
+{
+verificado++;
+if (palabra[i].indexOf(letra) > -1)
+{
+document.getElementById(i).innerHTML=letra;
+total=total+letra;
+if(total.length==espacios)
+{
+alert("Listo ha ganado pero ha tenido " + errores + " errores");
+reset();
+}
+if(errores!=0)
+{
+errores = errores -1;
+
+}
+}else{
+if (verificado == 1)
+{
+errores++;
+
+}
+document.getElementById('errores').innerHTML='Erro res: ' + errores;
+}
+}
+}
+
+function reset(){
+var errores=0;
+var total="";
+document.getElementById('errores').innerHTML='Erro res: 0';
+location.reload();
+}
+
+var palabras;
+palabras=new Array(5);
+palabras[0]='linkgl';
+palabras[1]='indetectables';
+palabras[2]='revolucion';
+palabras[3]='cactus';
+palabras[4]='polifemo';
+mostrar();
+
+</script>
+</head>
+<body>
+
+
+
+<span width="30px" id="errores">Errores: 0</span><br />
+<span width="30px" id="0">&nbsp;</span>
+<span width="30px" id="1">&nbsp; </span>
+<span width="30px" id="2">&nbsp; </span>
+<span width="30px" id="3">&nbsp;</span>
+<span width="30px" id="4">&nbsp;</span>
+<span width="30px" id="5">&nbsp; </span>
+<span width="30px" id="6">&nbsp; </span>
+<span width="30px" id="7">&nbsp; </span>
+<span width="30px" id="8">&nbsp; </span>
+<span width="30px" id="9">&nbsp; </span>
+<span width="30px" id="10">&nbsp; </span>
+<span width="30px" id="11"> &nbsp;</span>
+<span width="30px" id="12">&nbsp; </span>
+<span width="30px" id="13">&nbsp; </span>
+<br />
+<span width="10px" id="guiones"></span>
+<br />Introduzca una letra
+<form name="f1">
+<input id="texto" type="text" name="letra" onkeypress="validar(event)">
+</form>
+</body>
+</html>

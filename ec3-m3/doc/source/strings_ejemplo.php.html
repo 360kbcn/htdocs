@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="../js/jquery-1.4.2.min.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shCore.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shBrushJScript.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shBrushPhp.js">
+        </script>
+        <script
+            type="text/javascript"
+            src="../syntax_highlighter/scripts/shBrushXml.js">
+        </script>
+        <link
+            href="../syntax_highlighter/styles/shCore.css" rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="../syntax_highlighter/styles/shCoreEclipse.css"
+            rel="stylesheet" type="text/css"
+        />
+        <link
+            href="../syntax_highlighter/styles/shThemeWordpress.css"
+            rel="stylesheet" type="text/css"
+        />
+    </head>
+    <body>
+        <pre class="brush: php">&lt;?php
+/**
+*Libreria de funciones.
+*
+*@author an&oacute;nimo &lt;anonimo@server.com&gt;
+*@license GPl
+*/
+namespace Lib\strings;
+
+
+/**
+*Secuencia de caracteres &quot;&lt;-&gt;&quot; esta en medio.
+*
+*Funcion que recibe como argumento un string $cadena que busca &quot;&lt;-&gt;&quot; si esta en medio del string.
+*Si la secuencia esta en medio devuelve TRUE y sino FALSE.
+*
+*@example de secuencia en medio del string.(&quot;albert&lt;-&gt;albert&quot;)
+*
+*@param string $cadena donde recibimos el string.
+*
+*@return  devuelve un TRUE secuencia esta en medio o FALSE si no se encuentra en medio.
+*
+*/
+
+function flechaMedio($cadena){
+
+    //TODO para comentar lo que falta hacer
+
+    return false;
+}
+?&gt;
+</pre>
+        <script type="text/javascript">
+             SyntaxHighlighter.all();
+             jQuery('.gutter div').each(function(key, data){
+                jQuery(data).prepend('<a name="L'+jQuery(data).text()+'"/>');
+             });
+        </script>
+    </body>
+</html>

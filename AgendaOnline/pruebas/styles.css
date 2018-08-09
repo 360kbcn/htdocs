@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background: #222;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.main-section {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.message-container {
+    height: 30vh;
+}
+
+.message {
+    position: relative;
+    color: #0fb5b3;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.message::after {
+    position: absolute;
+    right: -5px;
+    bottom: 5px;
+    width: 4px;
+    height: 4vw;
+    content: '';
+    opacity: 1;
+    display: block;
+    background: #FFF;
+}
+
+.message.animate-cursor::after {
+    animation: cursor .6s infinite ease;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

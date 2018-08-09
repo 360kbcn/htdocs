@@ -1,0 +1,35 @@
+/*nota para mi libreria -pagina propiedades.css*/
+
+*{
+
+}
+
+#index_h1, #calc1_h1, #calc2_h1 {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+#index_par1, #index_par2, #calc1_par1, #calc2_par1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+#index_btn1, #index_btn2, #calc1_btn2,  #calc2_btn2 {
+background-color: grey;
+color: white;
+border:1px;
+border-radius: 15px 15px 15px 15px;
+padding: 15px 24px;
+text-align: center;
+font-size: 16px;
+}
+
+#index_pie{
+  background-color: red;
+  color: white;
+  border: 1px;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 16px;
+}

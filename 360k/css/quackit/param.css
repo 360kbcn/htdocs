@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav,
+#main > aside {
+  flex: 0 0 20vw;
+
+}
+#main > nav {
+  font-size: 20px;
+  color: darkgreen;
+  order: -1;
+}
+
+header > h1{
+  vertical-align: middle;
+  text-align: center;
+  margin:inherit;
+  color: coral;
+
+}
+
+#uno{
+  display:block;
+}
+
+nav > div > ul{
+  font-size: 9px;
+  color:#795548;
+  text-align: left;
+  padding:0;
+  list-style: none;
+
+}
+
+header, footer {
+  background:lemonchiffon;
+  height: 20vh;
+}
+
+nav{
+  background-color:antiquewhite;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}

@@ -1,0 +1,16 @@
+.frutas img{
+    width:90%;
+}
+
+[id^=fruta]{
+    width:30%;
+}
+
+.tapete{
+    width:80;
+    min-height: 150px;
+    background-color: #009900;
+    border: solid 3px grey;
+    margin:5px;
+    padding:10px;
+}

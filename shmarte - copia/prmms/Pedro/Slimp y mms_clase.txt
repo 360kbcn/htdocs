@@ -1,0 +1,8 @@
+Hola Equipo
+
+He creado los borradores de la pagina de Slimp.php para poner las URL y la de la Clase mms_clase.php donde van 
+las funciones de consulta.
+
+Sludos.
+
+Pedro 

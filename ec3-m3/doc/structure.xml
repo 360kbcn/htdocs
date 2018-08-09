@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.8.5">
+  <partials/>
+  <file path="arrays.php" generated-path="arrays.html" hash="91016e4a141f896d041e0ec371c66bf0" package="Default">
+    <docblock line="0">
+      <description>funciones</description>
+      <long-description></long-description>
+      <tag name="author" line="0" description="360k" link="mailto:360k.cat@gmail.com"/>
+      <tag name="license" line="0" description="AGPL"/>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <function namespace="Lib\arrays" line="33" package="Default">
+      <name>max</name>
+      <full_name>\Lib\arrays\max()</full_name>
+      <docblock line="33">
+        <description>función que busca el valor maximo dentro de un array de enteros recibido.</description>
+        <long-description></long-description>
+        <tag name="package" line="33" description="Default"/>
+        <tag name="example" line="33" description="Recorreremos el Array comprobando cual de los numeros que lo componen es el mayor.&#10;Teniendo en cuenta el signo del numero.&#10;max([3,4,6,1,65,-3,6,10]): devolvera 65"/>
+        <tag name="example" line="33" description="Si todos fueran de signo negativo se tendra en cuenta el mayo de ellos.&#10;max([-3,-14,-7-23]): devolvera -3"/>
+        <tag name="param" line="33" description="&lt;p&gt;es donde recibimos el array&lt;/p&gt;" type="string" variable="$array">
+          <type>string</type>
+        </tag>
+        <tag name="return" line="33" description="devuelve el numero mayor de los valores en el array" type="string">
+          <type>string</type>
+        </tag>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$array</name>
+        <default></default>
+        <type>string</type>
+      </argument>
+    </function>
+    <function namespace="Lib\arrays" line="72" package="Default">
+      <name>min</name>
+      <full_name>\Lib\arrays\min()</full_name>
+      <docblock line="72">
+        <description>función que busca el valor minimo dentro de un array de enteros recibido.</description>
+        <long-description></long-description>
+        <tag name="package" line="72" description="Default"/>
+        <tag name="example" line="72" description="Recorreremos el Array comprobando cual de los numeros que lo componen es el mayor.&#10;Teniendo en cuenta el signo del numero.&#10;max([3,4,6,1,65,-3,6,10]): devolvera -3"/>
+        <tag name="example" line="72" description="Si todos fueran de signo negativo se tendra en cuenta el mayo de ellos.&#10;max([-3,-14,-7-23]): devolvera -3"/>
+        <tag name="param" line="72" description="&lt;p&gt;es donde recibimos el array&lt;/p&gt;" type="string" variable="$array">
+          <type>string</type>
+        </tag>
+        <tag name="return" line="72" description="devuelve el numero mayor de los valores en el array" type="string">
+          <type>string</type>
+        </tag>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$array</name>
+        <default></default>
+        <type>string</type>
+      </argument>
+    </function>
+    <function namespace="Lib\arrays" line="99" package="Default">
+      <name>espejoMayor</name>
+      <full_name>\Lib\arrays\espejoMayor()</full_name>
+      <docblock line="99">
+        <description>función que busca el numero total de elemento en un array espejo.</description>
+        <long-description></long-description>
+        <tag name="package" line="99" description="Default"/>
+        <tag name="example" line="99" description="Recorreremos el Array comprobando cual de los numeros que lo componen&#10;comprobando y hay una secuenci invertida y o espejo. De existir se contaria el&#10;numero de elementos que compoenen esta secuencia.&#10;&#10;Ejemplo espejo1 ([3,4,6,1,65,-3,6,4,10]): devolvera 2&#10;&#10;&#10;Ejemplo espejo2 ([-3,14,1,14,-23]): devolvera 3"/>
+        <tag name="param" line="99" description="&lt;p&gt;es donde recibimos el array&lt;/p&gt;" type="string" variable="$array">
+          <type>string</type>
+        </tag>
+        <tag name="return" line="99" description="devuelve el numero de valores que conforman la secuencia espejo." type="void">
+          <type>void</type>
+        </tag>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$array</name>
+        <default></default>
+        <type>string</type>
+      </argument>
+    </function>
+    <markers>
+      <todo line="35">Resto documentar.</todo>
+      <todo line="102">Resto documentar.</todo>
+    </markers>
+    <source>eJzllM9uEzEQxu+R8g5z4NBWm/9pkKCirVTEpagIegMOjneSuHjtxeuNUiGeikfgxZixne2uUgkhIYTUKNrdxJ5vvpn5rc/Oy03Z7/V7o5OTfi99YVUbqazBKv6+ELXfWAezxfgLnPF1KIW/WBdC6aG0xau0TSuJpkK4fPPuuhEb9XtGFFiVQiJcq+Un4Zy4r152koaEP38Y+FojLOtKCkANW6EpayF2qrCQo/GOb1AbCBr8TH+isxU4lGqpcjtMVnAnilJjqid9JvAepXUOHRYUQxkugw6VUDq7FCa3IGuhWVjTBlMXQZxNaRu2UVMMYIgtxL11nO8WjUKOpSVZk6NgvlJrw3Z1kuGdVMrRx1k2zxbZJFucZoMZP40/H7+gjVurt+gELE67NZDtDwq8zcnJqqYdhv1FeYNr4dXWAnXdkwcK75hgj6FNmuppHFDawWSeDZ4PprNu7sEs5S6FEwVU3imzhmex3VR2bg2pxWanFoa1FOXQ187sw0i2RtKFpgexZ/v2hvFyL01bh3hhGjzxx6M/ismPvzEvPMTRCG5vrm5olJWn2qwkZaqWJxE3JBNjIuz7f062Mk+K7Iaup0l2RKaNtzItvB9j97cgpeze+jhc1MivQ5hYQxMhinf/BCBSbEfcw4Y0aiNoijw6qUAZGodXuaBFu3cGV+R8pyqvHM9bWn6hFRdIgqnEVnExbciJkVr/kEGkOuH1HVKd+xwTOORzfkDo9OGk6IZPIcBFbE34coDXX6Fra1X+GFsUuicqFm5W1hX0tuhW2d0pjyI9DWpx8S1D2jlRI3Z/fKqe08H4C4KpjAQ=</source>
+  </file>
+  <file path="strings.php" generated-path="strings.html" hash="615f0104fd93ca1757859f1b85245583" package="Default">
+    <docblock line="0">
+      <description>funciones</description>
+      <long-description></long-description>
+      <tag name="author" line="0" description="360k" link="mailto:360k.cat@gmail.com"/>
+      <tag name="license" line="0" description="AGPL"/>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <function namespace="Lib\strings" line="40" package="Default">
+      <name>flechaMedio</name>
+      <full_name>\Lib\strings\flechaMedio()</full_name>
+      <docblock line="40">
+        <description>Cadena "&lt;-&gt;" en medio en un cojunto de caracteres.</description>
+        <long-description>Recivimos una $cadena, y tenemos que comprobar si la siguiente serie "&lt;-&gt;",
+aparece en medio. Se considerará que está en medio si el número de caracteres que hay
+antes y después difieren como mucho en una unidad. devolverenos TRUE de lo contrario FALSE.</long-description>
+        <tag name="package" line="40" description="Default"/>
+        <tag name="example" line="40" description="('asd&lt;-&gt;asd').&#10;&#10;&#10;Se comprueba si &lt;-&gt; estan en medio.&#10;&#10;Si es que no se devolvera False&#10;&#10;De lo contrario se comprobara si a los lados se encuentra &lt;&gt;&#10;&#10;Si alguno de estos dos elementos no estuviera en la posicion correcta se devolveria False&#10;&#10;si no devolvera TRUE.&#10;&#10;Tambien se considera que esta en medio cuando sea una posicion menos y mas&#10;por la posibilidad de que el medio pudiera ser impar."/>
+        <tag name="param" line="40" description="&lt;p&gt;donde recibimos la cadena string.&lt;/p&gt;" type="string" variable="$cadena">
+          <type>string</type>
+        </tag>
+        <tag name="return" line="40" description="devuelve un True si es correcto y False si no se comple la condición." type="boolean">
+          <type>boolean</type>
+        </tag>
+      </docblock>
+      <argument line="0" by_reference="false">
+        <name>$cadena</name>
+        <default></default>
+        <type>string</type>
+      </argument>
+    </function>
+    <markers>
+      <todo line="42">Resto documentar.</todo>
+    </markers>
+    <source>eJxdVMtuE0EQvFvyP7QipDwUHCQkLlh5iCRcgoISc+PSnm3bA/NYdnYsIsTHcOTMjat/jOrZsRNir0ezuzXdVV3dnp61q3Y8Go9Ojo7GoyNa5GBsDJJwo/fnnPtV7Oj1m1dfaarrxHB/vvRs3cREf1pAzhoJSeji/ccbPDgZjwJ7SS0boRs7/5z6zoZlevuYCNc7biQw7U1fnu6RBPLS2KibHMjELzn0kRohwx2bXjpJk+HcnRi7tj4mAJlemBLmmB6olyD6+FvGqejbLs65o2TJMdZlthJ6oSSdlSHrMaJxy52A5pbAhO71dEi2kY67za8STlKP3Y4kYoqjsPnrpXtGssBX/KChkS6BV4NK5M3vRI1dWGBUno/ks1lVvYyfbbiZALuObq0gCJndfbrS6C4qox50kPv64ub+qpbiXL6zb52As8kC55gO9jk1EId1/7DCcN3XkmSZazEICBXF4VF4BULaICJAp+wIMV2zSzKALp9xSk8KXsIz3ifUvcGatLhKD2Canu7SsFvmUKoHIsApVpx4ALHDGzzOa6upwREetjFZbU7k6uBZz0/52f8IgkIJveWulawCZ+zn6ISBc7V56zE/Wmwyh0aVcfFnl9sXZx7Is45Ii9GozObWqYWqp0RzNVCbm6IBfUfWo9u23mHLnobR2LYxihAQAOoQz5cSUn0zALeHO+lzF2geoxOYCKVZIFVnZwaTS4embaEi+Jbi0FCXahf6RsMjI6Rt/oQaG9Or/wK9ql04MSv+oEIOKsXDH2WKT2h2e3lLd+odWJusvhVx+iV8KsWFJsbk/xyPzmD+P1tHcko=</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="Lib" full_name="Lib">
+    <namespace name="arrays" full_name="Lib\arrays"/>
+    <namespace name="strings" full_name="Lib\strings"/>
+  </namespace>
+  <deprecated count="0"/>
+</project>

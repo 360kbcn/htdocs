@@ -1,0 +1,37 @@
+h1{
+  background-color: orange;
+  color: white;
+  padding: 10px;
+}
+
+
+th{
+  background-color: gold;
+  text-align: right;
+}
+
+td, th{
+  border:1px solid gray;
+  padding: 5px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+form{
+  background-color: gold;
+  padding: 1em;
+}
+
+input{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.msg{
+  border: 1px solid gray;
+  background-color: rgb(240,240,240);
+  box-shadow: 2px 2px 5px gray;
+  padding: 5px;
+}

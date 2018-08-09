@@ -1,0 +1,67 @@
+h1{
+  font-size: 200%;
+  color: cadetblue;
+}
+
+.relative{
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border-color: greenyellow;
+  background-color: floralwhite;
+  margin: 0;
+
+}
+
+
+#rb{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: solid 2px darkred;
+  left: 0px;
+  bottom: 137px;
+}
+
+#lb{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: solid 2px cadetblue;
+  left: 236px;
+  bottom: 137px;
+}
+
+#lt{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: solid 2px darkblue;
+  left: 0px;
+  bottom: 2px;
+}
+
+#rt{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: solid 2px black;
+  left: 236px;
+  bottom: 2px;
+}
+
+#center{
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  border: solid 2px coral;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+
+
+
+}

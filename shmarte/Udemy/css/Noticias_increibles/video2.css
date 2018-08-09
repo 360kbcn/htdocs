@@ -1,0 +1,23 @@
+h1:hover{
+  color: red;
+}
+
+#cabecera p{
+  display:none;
+}
+
+#cabecera:hover p{
+  display:block;
+}
+
+h1::before{
+  content: " contenido before ";
+}
+
+p::after{
+  content: " contenido after  ";
+}
+
+p::before{
+  content:url("smile.jpg");
+}

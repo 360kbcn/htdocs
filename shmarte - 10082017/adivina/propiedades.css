@@ -1,0 +1,71 @@
+*{
+
+}
+
+#h1{
+  background-color: white;
+  color:black
+  text-align: center;
+  font-size: 40px;
+
+}
+
+
+#p1{
+  color: black
+  text-align: center;
+  font-size: 22px;
+}
+
+#box{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+#btn1{
+  background-color: #A8F5CC;
+  color:black;
+  border:1px;
+  border-radius: 15px 15px 15px 15px;
+  padding: 15px 24px;
+  text-align: center;
+  font-size: 18px
+
+}
+
+#Mensajes{
+  color: red;
+  border: 1px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+#Mensajes1{
+  color: black;
+  border: 1px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#Mensajes2{
+  color: blue;
+  border: 1px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+#Bien{
+  background-color: black;
+  color: Yellow;
+  border: 1px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#centrar{
+  width: 500px;
+  margin: auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <p id="texto">Hola Mundo</p> 
+    <button id="boton">
+        !Cambiar Texto
+    </button>
+    
+    
+    <p id="parrafo2">JavaScript es .....</p>
+    <button id="boton2">
+        !Cambia el Texto
+    </button>
+    
+    <h1 id="vacio"></h1>
+    
+    <button id="parrafo">Crea el Parrafo</button>
+    
+    <p id="stylo">Texto con estilo</p>
+    <button id="modstylo">Boton modifica el stylo</button>
+    
+    <script type="text/javascript">
+        document.getElementById("boton").onclick = 
+            function(){
+            // Esta funcion modifica el texto de la etiqueta p
+            document.getElementById("texto").innerHTML = "Hola has cambiado el texto";
+        }
+        
+        document.getElementById("boton2").onclick = 
+            function(){
+            // Esta funcion modifica el texto de la etiqueta p
+            document.getElementById("parrafo2").innerHTML =
+       
+            document.getElementById("parrafo2").innerHTML + " Increible";
+        }  
+        
+        document.getElementById("parrafo").onclick = 
+            function(){
+            // Esta funcion modifica el texto de la etiqueta p
+            document.getElementById("vacio").innerHTML = "Este es el nuevo parrafo en H1";
+        }  
+        
+        document.getElementById("modstylo").onclick = 
+            function(){
+            document.getElementById("stylo").style.fontSize = "50px";
+            document.getElementById("stylo").style.fontWeight = "900";
+            document.getElementById("stylo").style.color = "blue";
+        }  
+    </script>
+</body>
+</html>
